@@ -10,6 +10,7 @@ import SwiftUI
 struct Xbox: Identifiable{
     var id = UUID()
     var name: String
+    var date: String
     var Image: String
     var price: String
     var description: String

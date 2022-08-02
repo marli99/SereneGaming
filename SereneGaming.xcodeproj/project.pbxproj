@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F30D8EBD28999F5900A391F1 /* XboxListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30D8EBC28999F5900A391F1 /* XboxListView.swift */; };
 		F37BAA0B28996F5C004FD80C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BAA0A28996F5C004FD80C /* ContentView.swift */; };
 		F37BAA0D28996F5D004FD80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37BAA0C28996F5D004FD80C /* Assets.xcassets */; };
 		F37BAA1028996F5D004FD80C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37BAA0F28996F5D004FD80C /* Preview Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F30D8EBC28999F5900A391F1 /* XboxListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XboxListView.swift; sourceTree = "<group>"; };
 		F37BAA0528996F5C004FD80C /* SereneGaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SereneGaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37BAA0A28996F5C004FD80C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F37BAA0C28996F5D004FD80C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				F37BAA0A28996F5C004FD80C /* ContentView.swift */,
+				F30D8EBC28999F5900A391F1 /* XboxListView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30D8EBD28999F5900A391F1 /* XboxListView.swift in Sources */,
 				F3C86BCA28998D2600FD7962 /* Xbox.swift in Sources */,
 				F3C86BCC28998FB400FD7962 /* XboxView.swift in Sources */,
 				F3C86BC528998A0500FD7962 /* XboxData.swift in Sources */,
