@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        MapView()
         ZStack{
           Image("dark-diamond-tunnel-4k-mobile-wallpaper-616393588636n9a8qqu79")
                     .resizable()

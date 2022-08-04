@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		F30D8EBD28999F5900A391F1 /* XboxListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30D8EBC28999F5900A391F1 /* XboxListView.swift */; };
+		F31B1AD9289A88D3002D850B /* XboxDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AD8289A88D3002D850B /* XboxDetailsView.swift */; };
+		F31B1ADD289A9084002D850B /* PlaystationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1ADC289A9084002D850B /* PlaystationData.swift */; };
+		F31B1ADF289A995A002D850B /* Playstation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1ADE289A995A002D850B /* Playstation.swift */; };
+		F31B1AE1289A9986002D850B /* PlaystationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AE0289A9986002D850B /* PlaystationView.swift */; };
+		F31B1AE3289A99D6002D850B /* PlaystationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AE2289A99D6002D850B /* PlaystationViewModel.swift */; };
+		F31B1AE5289A9A47002D850B /* PlaystationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AE4289A9A47002D850B /* PlaystationListView.swift */; };
+		F31B1AE7289A9A98002D850B /* PlaystationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AE6289A9A98002D850B /* PlaystationDetailsView.swift */; };
+		F31B1AE9289AD694002D850B /* WII.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AE8289AD694002D850B /* WII.swift */; };
+		F31B1AED289AD6F7002D850B /* WiiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AEC289AD6F7002D850B /* WiiData.swift */; };
+		F31B1AEF289ADB92002D850B /* WiiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AEE289ADB92002D850B /* WiiViewModel.swift */; };
+		F31B1AF1289ADC16002D850B /* WiiListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AF0289ADC16002D850B /* WiiListView.swift */; };
+		F31B1AF3289ADC26002D850B /* WiiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AF2289ADC26002D850B /* WiiView.swift */; };
+		F31B1AF5289ADD3F002D850B /* WiiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AF4289ADD3F002D850B /* WiiDetailsView.swift */; };
+		F31B1AF7289AE83C002D850B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AF6289AE83C002D850B /* MapView.swift */; };
+		F31B1AFA289AE949002D850B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AF9289AE949002D850B /* Coordinator.swift */; };
+		F31B1B00289AEAA6002D850B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AFF289AEAA6002D850B /* LocationManager.swift */; };
 		F37BAA0B28996F5C004FD80C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BAA0A28996F5C004FD80C /* ContentView.swift */; };
 		F37BAA0D28996F5D004FD80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37BAA0C28996F5D004FD80C /* Assets.xcassets */; };
 		F37BAA1028996F5D004FD80C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37BAA0F28996F5D004FD80C /* Preview Assets.xcassets */; };
@@ -20,6 +36,22 @@
 
 /* Begin PBXFileReference section */
 		F30D8EBC28999F5900A391F1 /* XboxListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XboxListView.swift; sourceTree = "<group>"; };
+		F31B1AD8289A88D3002D850B /* XboxDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XboxDetailsView.swift; sourceTree = "<group>"; };
+		F31B1ADC289A9084002D850B /* PlaystationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaystationData.swift; sourceTree = "<group>"; };
+		F31B1ADE289A995A002D850B /* Playstation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playstation.swift; sourceTree = "<group>"; };
+		F31B1AE0289A9986002D850B /* PlaystationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaystationView.swift; sourceTree = "<group>"; };
+		F31B1AE2289A99D6002D850B /* PlaystationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaystationViewModel.swift; sourceTree = "<group>"; };
+		F31B1AE4289A9A47002D850B /* PlaystationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaystationListView.swift; sourceTree = "<group>"; };
+		F31B1AE6289A9A98002D850B /* PlaystationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaystationDetailsView.swift; sourceTree = "<group>"; };
+		F31B1AE8289AD694002D850B /* WII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WII.swift; sourceTree = "<group>"; };
+		F31B1AEC289AD6F7002D850B /* WiiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiiData.swift; sourceTree = "<group>"; };
+		F31B1AEE289ADB92002D850B /* WiiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiiViewModel.swift; sourceTree = "<group>"; };
+		F31B1AF0289ADC16002D850B /* WiiListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiiListView.swift; sourceTree = "<group>"; };
+		F31B1AF2289ADC26002D850B /* WiiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiiView.swift; sourceTree = "<group>"; };
+		F31B1AF4289ADD3F002D850B /* WiiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiiDetailsView.swift; sourceTree = "<group>"; };
+		F31B1AF6289AE83C002D850B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F31B1AF9289AE949002D850B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F31B1AFF289AEAA6002D850B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		F37BAA0528996F5C004FD80C /* SereneGaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SereneGaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37BAA0A28996F5C004FD80C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F37BAA0C28996F5D004FD80C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +75,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F31B1ADA289A9027002D850B /* listViews */ = {
+			isa = PBXGroup;
+			children = (
+				F30D8EBC28999F5900A391F1 /* XboxListView.swift */,
+				F31B1AE4289A9A47002D850B /* PlaystationListView.swift */,
+				F31B1AF0289ADC16002D850B /* WiiListView.swift */,
+			);
+			path = listViews;
+			sourceTree = "<group>";
+		};
+		F31B1ADB289A902F002D850B /* DetailsViews */ = {
+			isa = PBXGroup;
+			children = (
+				F31B1AD8289A88D3002D850B /* XboxDetailsView.swift */,
+				F31B1AE6289A9A98002D850B /* PlaystationDetailsView.swift */,
+				F31B1AF4289ADD3F002D850B /* WiiDetailsView.swift */,
+			);
+			path = DetailsViews;
+			sourceTree = "<group>";
+		};
+		F31B1AF8289AE933002D850B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F31B1AF9289AE949002D850B /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F31B1AFB289AEA73002D850B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F31B1AFC289AEA80002D850B /* Manager */,
+				F31B1AF8289AE933002D850B /* Coordinator */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		F31B1AFC289AEA80002D850B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F31B1AFF289AEAA6002D850B /* LocationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		F37BA9FC28996F5C004FD80C = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +139,7 @@
 		F37BAA0728996F5C004FD80C /* SereneGaming */ = {
 			isa = PBXGroup;
 			children = (
+				F31B1AFB289AEA73002D850B /* Map */,
 				F3C86BC3289989CA00FD7962 /* Screens */,
 				F3C86BC02899894E00FD7962 /* Views */,
 				F3C86BBF2899893900FD7962 /* Models */,
@@ -87,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				F3C86BC628998A6D00FD7962 /* XboxViewModel.swift */,
+				F31B1AE2289A99D6002D850B /* PlaystationViewModel.swift */,
+				F31B1AEE289ADB92002D850B /* WiiViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -95,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				F3C86BC428998A0500FD7962 /* XboxData.swift */,
+				F31B1ADC289A9084002D850B /* PlaystationData.swift */,
+				F31B1AEC289AD6F7002D850B /* WiiData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -103,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				F3C86BC928998D2600FD7962 /* Xbox.swift */,
+				F31B1ADE289A995A002D850B /* Playstation.swift */,
+				F31B1AE8289AD694002D850B /* WII.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				F3C86BCB28998FB400FD7962 /* XboxView.swift */,
+				F31B1AE0289A9986002D850B /* PlaystationView.swift */,
+				F31B1AF2289ADC26002D850B /* WiiView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,8 +204,10 @@
 		F3C86BC3289989CA00FD7962 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F31B1ADB289A902F002D850B /* DetailsViews */,
+				F31B1ADA289A9027002D850B /* listViews */,
 				F37BAA0A28996F5C004FD80C /* ContentView.swift */,
-				F30D8EBC28999F5900A391F1 /* XboxListView.swift */,
+				F31B1AF6289AE83C002D850B /* MapView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -194,8 +282,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				F30D8EBD28999F5900A391F1 /* XboxListView.swift in Sources */,
+				F31B1AE3289A99D6002D850B /* PlaystationViewModel.swift in Sources */,
+				F31B1AF3289ADC26002D850B /* WiiView.swift in Sources */,
 				F3C86BCA28998D2600FD7962 /* Xbox.swift in Sources */,
+				F31B1ADF289A995A002D850B /* Playstation.swift in Sources */,
+				F31B1AE9289AD694002D850B /* WII.swift in Sources */,
+				F31B1AFA289AE949002D850B /* Coordinator.swift in Sources */,
+				F31B1B00289AEAA6002D850B /* LocationManager.swift in Sources */,
+				F31B1AEF289ADB92002D850B /* WiiViewModel.swift in Sources */,
+				F31B1AF7289AE83C002D850B /* MapView.swift in Sources */,
+				F31B1AE1289A9986002D850B /* PlaystationView.swift in Sources */,
+				F31B1AD9289A88D3002D850B /* XboxDetailsView.swift in Sources */,
+				F31B1ADD289A9084002D850B /* PlaystationData.swift in Sources */,
 				F3C86BCC28998FB400FD7962 /* XboxView.swift in Sources */,
+				F31B1AF1289ADC16002D850B /* WiiListView.swift in Sources */,
+				F31B1AE7289A9A98002D850B /* PlaystationDetailsView.swift in Sources */,
+				F31B1AF5289ADD3F002D850B /* WiiDetailsView.swift in Sources */,
+				F31B1AE5289A9A47002D850B /* PlaystationListView.swift in Sources */,
+				F31B1AED289AD6F7002D850B /* WiiData.swift in Sources */,
 				F3C86BC528998A0500FD7962 /* XboxData.swift in Sources */,
 				F3C86BC22899899800FD7962 /* SereneGamingApp.swift in Sources */,
 				F37BAA0B28996F5C004FD80C /* ContentView.swift in Sources */,

@@ -11,22 +11,28 @@ struct XboxView: View{
     var xbox: Xbox
     
     var body: some View{
-        HStack{
+        VStack{
             Image(xbox.Image)
                 .renderingMode(.original)
                 .resizable()
-                .scaledToFit()
-                .frame(width: 80, height: 80, alignment: .leading)
-                .background(Color.black)
+                .frame(width: 330, height: 210, alignment: .leading)
+                .background(Color.white)
                 .cornerRadius(8)
             
-            VStack(alignment: .leading, spacing: 5){
-                Text(xbox.name)
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                Text(xbox.price)
-                    .foregroundColor(.gray)
-                    .font(.title3)
-            }
+            Text(xbox.name)
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundColor(.white)
+                .hoverEffect(.automatic)
+                .padding(.top, -45)
+            
+//            VStack(alignment: .leading, spacing: 5){
+//                Text(xbox.name)
+//                    .font(.title)
+//                    .foregroundColor(.white)
+//                Text(xbox.price)
+//                    .foregroundColor(.white)
+//                    .font(.title3)
+//            }
         }
     }
 }
