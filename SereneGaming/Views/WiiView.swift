@@ -12,18 +12,18 @@ struct WiiView: View{
     
     var body: some View{
         VStack{
+            Text(WII.name)
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundColor(.white)
+                .hoverEffect(.automatic)
+                .padding(.top, 20)
             Image(WII.Image)
                 .renderingMode(.original)
                 .resizable()
                 
                 .frame(width: 320, height: 210, alignment: .leading)
-                .background(Color.white)
                 .cornerRadius(8)
-            Text(WII.name)
-                .font(.system(size: 17, weight: .semibold))
-                .foregroundColor(.black)
-                .hoverEffect(.automatic)
-                .padding(.top, 0)
+            
 //
 //            VStack(alignment: .leading, spacing: 5){
 //                Text(playstation.name)

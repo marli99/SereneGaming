@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Terraria_-_Xbox_One_Video_Game__68748.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

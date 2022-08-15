@@ -24,10 +24,15 @@ struct WiiListView: View {
                                 WiiView(WII: item)
                                 
                             })
-                            .listRowBackground(Color.black)
+                            .listRowBackground(Image("download")
+                                        .resizable()
+                                        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                                        .opacity(0.8))
+//                            .listRowBackground(Color.black)
                     }
                 }
                 
+                .listStyle(PlainListStyle())
                 .navigationTitle("Wii")
                 .navigationBarItems(trailing: Button(action: {
                     print("settings clicked")
@@ -40,13 +45,14 @@ struct WiiListView: View {
                             .accentColor(.black)
                                                 
                 }
+                
                 .sheet(isPresented: $isShowingSettings){
 //                    SettingsView()
                 })
-                
             }
             .accentColor(.black)
     }
+    
     
 }
 

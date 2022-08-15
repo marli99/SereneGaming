@@ -12,18 +12,19 @@ struct PlaystationView: View{
     
     var body: some View{
         VStack{
+            Text(playstation.name)
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundColor(.white)
+                .hoverEffect(.automatic)
+                .padding(.top, 20)
+            
             Image(playstation.Image)
                 .renderingMode(.original)
                 .resizable()
                 
                 .frame(width: 320, height: 210, alignment: .leading)
-                .background(Color.white)
                 .cornerRadius(8)
-            Text(playstation.name)
-                .font(.system(size: 17, weight: .semibold))
-                .foregroundColor(.white)
-                .hoverEffect(.automatic)
-                .padding(.top, -50)
+            
 //            
 //            VStack(alignment: .leading, spacing: 5){
 //                Text(playstation.name)

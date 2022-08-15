@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+protocol ListStyle{}
 
 struct PlaystationListView: View {
     
@@ -13,7 +14,9 @@ struct PlaystationListView: View {
     
     @State private var isShowingSettings = false
     
+    
     var body: some View {
+        
             NavigationView{
                 List{
                     ForEach(playstationViewModel.PlaystationData.shuffled()){
@@ -24,10 +27,15 @@ struct PlaystationListView: View {
                                 PlaystationView(playstation: item)
                                 
                             })
-                            .listRowBackground(Color.black)
+                            .listRowBackground(Image("download")
+                                                .resizable()
+                                                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                                                .opacity(0.8))
+                        
+                        
                     }
                 }
-                
+                .listStyle(PlainListStyle())
                 .navigationTitle("Playstations")
                 .navigationBarItems(trailing: Button(action: {
                     print("settings clicked")
@@ -40,13 +48,18 @@ struct PlaystationListView: View {
                             .accentColor(.black)
                                                 
                 }
+                
                 .sheet(isPresented: $isShowingSettings){
 //                    SettingsView()
+                    
                 })
                 
             }
+            
+            
             .accentColor(.black)
     }
+    
     
 }
 

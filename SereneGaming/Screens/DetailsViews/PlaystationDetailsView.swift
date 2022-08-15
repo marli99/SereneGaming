@@ -27,18 +27,18 @@ struct PlaystationDetailsView: View {
                     
                     VStack(alignment: .leading, spacing: 5){
                         Text(playstation.name)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .font(.title)
                         Text(playstation.date)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .font(.title3)
                         Text(playstation.price)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .font(.title3)
                     }
                 }
                 Text(playstation.description)
-                    .foregroundColor(.white
+                    .foregroundColor(.black
                     )
                     .padding(30)
                     .font(.title3)
@@ -50,6 +50,7 @@ struct PlaystationDetailsView: View {
            
             
         }
+        
     }
 }
 

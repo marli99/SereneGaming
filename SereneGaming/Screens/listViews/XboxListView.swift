@@ -24,10 +24,14 @@ struct XboxListView: View {
                                 XboxView(xbox: item)
                                 
                             })
-                            .listRowBackground(Color.black)
+                            .listRowBackground(Image("download")
+                                                .resizable()
+                                                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                                                .opacity(0.8))
+//                            .listRowBackground(Color.black)
                     }
                 }
-                
+                .listStyle(PlainListStyle())
                 .navigationTitle("Xbox")
                 .navigationBarItems(trailing: Button(action: {
                     print("settings clicked")

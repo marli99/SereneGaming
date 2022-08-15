@@ -27,18 +27,18 @@ struct XboxDetailsView: View {
                     
                     VStack(alignment: .leading, spacing: 5){
                         Text(xbox.name)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .font(.title)
                         Text(xbox.date)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .font(.title3)
                         Text(xbox.price)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .font(.title3)
                     }
                 }
                 Text(xbox.description)
-                    .foregroundColor(.white
+                    .foregroundColor(.black
                     )
                     .padding(30)
                     .font(.title3)

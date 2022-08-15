@@ -12,18 +12,19 @@ struct XboxView: View{
     
     var body: some View{
         VStack{
-            Image(xbox.Image)
-                .renderingMode(.original)
-                .resizable()
-                .frame(width: 330, height: 210, alignment: .leading)
-                .background(Color.white)
-                .cornerRadius(8)
-            
             Text(xbox.name)
                 .font(.system(size: 17, weight: .semibold))
                 .foregroundColor(.white)
                 .hoverEffect(.automatic)
-                .padding(.top, -45)
+                .padding(.top, 10)
+            
+            Image(xbox.Image)
+                .renderingMode(.original)
+                .resizable()
+                .frame(width: 330, height: 210, alignment: .leading)
+                .cornerRadius(8)
+            
+            
             
 //            VStack(alignment: .leading, spacing: 5){
 //                Text(xbox.name)
