@@ -15,41 +15,54 @@ struct XboxListView: View {
     
     var body: some View {
             NavigationView{
-                List{
-                    ForEach(xboxViewModel.XboxData.shuffled()){
-                        item in
+                ZStack{
+                    VStack{
                         NavigationLink(
-                            destination: XboxDetailsView(xbox: item),
+                        
+                            destination: XboxGamesListView(),
                             label: {
-                                XboxView(xbox: item)
-                                
+                                Text("Explore GAMES")
+                                    .foregroundColor(.white)
+                                    .padding(.top,30)
+                                    .padding(.bottom,30)
+                                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 100, maxHeight: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .background(Color(.black))
                             })
-                            .listRowBackground(Image("download")
-                                                .resizable()
-                                                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                                                .opacity(0.8))
-//                            .listRowBackground(Color.black)
+                        List{
+                            ForEach(xboxViewModel.XboxData.shuffled()){
+                                item in
+                                NavigationLink(
+                                    destination: XboxDetailsView(xbox: item),
+                                    label: {
+                                        XboxView(xbox: item)
+                                        
+                                    })
+                                    .listRowBackground(Image("download")
+                                                        .resizable()
+                                                        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                                                        .opacity(0.8))
+        //                            .listRowBackground(Color.black)
+                            }
+                        }
+                        .listStyle(PlainListStyle())
+                        .navigationTitle("Xbox")
+                        .navigationBarItems(trailing: Button(action: {
+                            print("settings clicked")
+                                isShowingSettings = true
+                        }){
+                                Image(systemName: "gear")
+                                    .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .accentColor(.black)
+                                                        
+                        }
+                        .sheet(isPresented: $isShowingSettings){
+                            SettingsScreenFinal()
+                        })
                     }
-                }
-                .listStyle(PlainListStyle())
-                .navigationTitle("Xbox")
-                .navigationBarItems(trailing: Button(action: {
-                    print("settings clicked")
-                        isShowingSettings = true
-                }){
-                        Image(systemName: "gear")
-                            .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                            .accentColor(.black)
-                                                
-                }
-                .sheet(isPresented: $isShowingSettings){
-//                    SettingsView()
-                })
-                
             }
-            .accentColor(.white)
+        }.accentColor(.white)
     }
     
 }

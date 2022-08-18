@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct SereneGamingApp: App {
+    @AppStorage("isOnboarding") var isOnboarding: Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            SplashScreen()
+            if isOnboarding{
+                ContentView()
+//                    .preferredColorScheme(isDarkMode ? .dark : .light)
+            }else{
+                OnboardingView()
+//                    .preferredColorScheme(isDarkMode ? .dark : .light)
+            }
         }
     }
 }

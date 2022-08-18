@@ -18,6 +18,19 @@ struct PlaystationListView: View {
     var body: some View {
         
             NavigationView{
+                ZStack{
+                    VStack{
+                        NavigationLink(
+                        
+                            destination: PlaystationGamesListView(),
+                            label: {
+                                Text("Explore GAMES")
+                                    .foregroundColor(.white)
+                                    .padding(.top,30)
+                                    .padding(.bottom,30)
+                                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 100, maxHeight: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .background(Color(.black))
+                            })
                 List{
                     ForEach(playstationViewModel.PlaystationData.shuffled()){
                         item in
@@ -50,10 +63,12 @@ struct PlaystationListView: View {
                 }
                 
                 .sheet(isPresented: $isShowingSettings){
-//                    SettingsView()
+                    SettingsScreenFinal()
                     
                 })
                 
+            }
+                }
             }
             
             

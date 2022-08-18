@@ -103,6 +103,24 @@ struct PlaystationGamesListView: View {
                                 .padding(.leading,40)
                                 }
                             }
+                        .listStyle(PlainListStyle())
+                        .navigationBarItems(trailing: Button(action: {
+                            print("settings clicked")
+                                isShowingSettings = true
+                        }){
+                            Text("Explore Xbox Games")
+                                .foregroundColor(.black)
+                                .padding(.trailing,150)
+                            
+                                Image(systemName: "gear")
+                                    .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .accentColor(.black)
+                        }
+                        .sheet(isPresented: $isShowingSettings){
+                            SettingsScreenFinal()
+                        })
 //
 //                        Text("Role Playing Games")
 //                            .bold()

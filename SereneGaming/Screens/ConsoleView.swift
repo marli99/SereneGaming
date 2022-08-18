@@ -23,7 +23,7 @@ struct ConsoleView: View {
                         VStack(spacing:30){
                             VStack(alignment: .center, spacing:10){
                                 NavigationLink(
-                                    destination: XboxGamesView(),
+                                    destination: XboxGamesListView(),
                                     label: {
                                         Image("clipart610203")
                                             .resizable()
@@ -47,7 +47,7 @@ struct ConsoleView: View {
                             
                             VStack(alignment: .center, spacing:10){
                                 NavigationLink(
-                                    destination: XboxGamesView(),
+                                    destination: PlaystationGamesListView(),
                                     label: {
                                         Image("wiiLogo")
                                             .resizable()

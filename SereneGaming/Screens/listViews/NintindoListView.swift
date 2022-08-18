@@ -43,7 +43,7 @@ struct NintindoListView: View {
                                             
             }
             .sheet(isPresented: $isShowingSettings){
-//                    SettingsView()
+                SettingsScreenFinal()
             })
             
         }

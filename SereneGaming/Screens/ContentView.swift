@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
             NavigationView{
+                ScrollView{
                 ZStack{
                     Image("dark-diamond-tunnel-4k-mobile-wallpaper-616393588636n9a8qqu79")
                         .resizable()
@@ -75,7 +76,7 @@ struct ContentView: View {
                                 HStack(spacing:40){
                                     NavigationLink(
                                     
-                                        destination: XboxGamesListView(),
+                                        destination: ConsoleView(),
                                         label: {
                                             Image("gamesicon2")
                                                 .resizable()
@@ -86,13 +87,15 @@ struct ContentView: View {
                                         .resizable()
                                         .frame(width: 132.0, height: 132.0)
                                 }
-                                .padding(.bottom, 95)
+                                .padding(.bottom, 5)
                                 
                             }
                         }
             }
         
         }
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            }
     }
 }
 

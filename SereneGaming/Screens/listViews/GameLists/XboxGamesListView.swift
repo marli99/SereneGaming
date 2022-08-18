@@ -23,25 +23,25 @@ struct XboxGamesListView: View {
                 VStack{
                     ScrollView{
                     VStack(alignment:.leading, spacing:0){
-                        Text("Sandbox Games")
-                            .bold()
-                            .padding(.leading,30)
-                            
-                        ScrollView(.horizontal,showsIndicators: false) {
-                            HStack(spacing:20){
-                                ForEach(sandboXboxViewModel.SandboxXboxData.shuffled()){
-                                        item in
-                                    NavigationLink(
-                                        destination: XboxSandboxDetailsView(sandboXbox: item),
-                                        label: {
-                                            XboxSandboxView(SandboXbox: item)
-                                                
-                                        })
-                                    }
-                                }
-                            .padding(.bottom,30)
-                            .padding(.leading,30)
-                            }
+//                        Text("Sandbox Games")
+//                            .bold()
+//                            .padding(.leading,30)
+//
+//                        ScrollView(.horizontal,showsIndicators: false) {
+//                            HStack(spacing:20){
+//                                ForEach(sandboXboxViewModel.SandboxXboxData.shuffled()){
+//                                        item in
+//                                    NavigationLink(
+//                                        destination: XboxSandboxDetailsView(sandboXbox: item),
+//                                        label: {
+//                                            XboxSandboxView(SandboXbox: item)
+//
+//                                        })
+//                                    }
+//                                }
+//                            .padding(.bottom,30)
+//                            .padding(.leading,30)
+//                            }
                         
                             Text("Real time strategy Games")
                                 .bold()
@@ -132,7 +132,7 @@ struct XboxGamesListView: View {
                         }){
                             Text("Explore Xbox Games")
                                 .foregroundColor(.black)
-                                .padding(.trailing,200)
+                                .padding(.trailing,00)
                             
                                 Image(systemName: "gear")
                                     .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
@@ -141,7 +141,7 @@ struct XboxGamesListView: View {
                                     .accentColor(.black)
                         }
                         .sheet(isPresented: $isShowingSettings){
-            //                    SettingsView()
+                            SettingsScreenFinal()
                         })
                 
                     }

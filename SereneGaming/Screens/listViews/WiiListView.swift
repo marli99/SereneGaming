@@ -47,7 +47,7 @@ struct WiiListView: View {
                 }
                 
                 .sheet(isPresented: $isShowingSettings){
-//                    SettingsView()
+                    SettingsScreenFinal()
                 })
             }
             .accentColor(.black)
