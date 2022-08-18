@@ -9,6 +9,8 @@ import SwiftUI
 
 struct XboxGamesListView: View {
     
+    @StateObject var sportXboxViewModel: SportXboxViewModel = SportXboxViewModel()
+    @StateObject var rolePlayingXboxViewModel: RolePlayingXboxViewModel = RolePlayingXboxViewModel()
     @StateObject var multiXboxViewModel: MultiXboxViewModel = MultiXboxViewModel()
     @StateObject var shooterXboxViewModel: ShooterXboxViewModel = ShooterXboxViewModel()
     @StateObject var sandboXboxViewModel: SandboXboxViewModel = SandboXboxViewModel()
@@ -18,11 +20,12 @@ struct XboxGamesListView: View {
     var body: some View {
         NavigationView{
             ZStack{
-                ScrollView{
+                VStack{
+                    ScrollView{
                     VStack(alignment:.leading, spacing:0){
                         Text("Sandbox Games")
                             .bold()
-                            .padding(.leading,0)
+                            .padding(.leading,30)
                             
                         ScrollView(.horizontal,showsIndicators: false) {
                             HStack(spacing:20){
@@ -37,6 +40,7 @@ struct XboxGamesListView: View {
                                     }
                                 }
                             .padding(.bottom,30)
+                            .padding(.leading,30)
                             }
                         
                             Text("Real time strategy Games")
@@ -100,28 +104,28 @@ struct XboxGamesListView: View {
                                 }
                             }
                         
-//                        Text("Role Playing Games")
-//                            .bold()
-//                            .padding(.leading,30)
-//                            .padding(.top,20)
-//
-//                        ScrollView(.horizontal,showsIndicators: false) {
-//                            HStack{
-//                                ForEach(sandboXboxViewModel.SandboxXboxData.shuffled()){
-//                                        item in
-//                                    NavigationLink(
-//                                        destination: XboxSandboxDetailsView(sandboXbox: item),
-//                                        label: {
-//                                            XboxSandboxView(SandboXbox: item)
-//
-//                                        })
-//                                    }
-//                                .padding(.leading,40)
-//                                }
-//                            }
+                        Text("Role Playing Games")
+                            .bold()
+                            .padding(.leading,30)
+                            .padding(.top,20)
+
+                        ScrollView(.horizontal,showsIndicators: false) {
+                            HStack{
+                                ForEach(rolePlayingXboxViewModel.RolePlayingXboxData.shuffled()){
+                                        item in
+                                    NavigationLink(
+                                        destination: RolePlayingXboxDetailsView(rolePlayXbox: item),
+                                        label: {
+                                            RolePlayingXboxView(RolePlayXbox: item)
+
+                                        })
+                                    }
+                                .padding(.leading,40)
+                                }
+                            }
+                        
                     
                         .listStyle(PlainListStyle())
-            //            .navigationTitle("Sanbox Games")
                         .navigationBarItems(trailing: Button(action: {
                             print("settings clicked")
                                 isShowingSettings = true
@@ -141,7 +145,33 @@ struct XboxGamesListView: View {
                         })
                 
                     }
+                        ScrollView{
+                            VStack{
+                                Text("Sport and Simulation Games")
+                                    .bold()
+                                    .padding(.leading,30)
+                                    .padding(.top,20)
+
+                                ScrollView(.horizontal,showsIndicators: false) {
+                                    HStack(spacing:20){
+                                        ForEach(sportXboxViewModel.SportXboxData.shuffled()){
+                                                item in
+                                            NavigationLink(
+                                                destination: SportXboxDetailsView(sportSimXbox: item),
+                                                label: {
+                                                    SportXboxView(SportSimXbox: item)
+
+                                                })
+                                            }
+                                        .padding(.leading,40)
+                                        }
+                                    }
+
+                            }
+                        }
                 }
+                
+            }
             }
             
         }
