@@ -20,7 +20,8 @@ struct OnboardingCardView: View {
                 .renderingMode(.original)
                 .resizable()
                 .scaledToFill()
-                .frame(width: 400, height: 890, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: 400, height: 845, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
             VStack{
             Text(title)

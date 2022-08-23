@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OnboardingView: View {
     @AppStorage("isOnboarding") var isOnboarding: Bool = true
+//    @AppStorage("isOnboarding") var isOnboarding: Bool = false
     
     var body: some View{
         TabView{
@@ -18,9 +19,9 @@ struct OnboardingView: View {
             
             OnboardingCardView(image: "360_F_471002062_tCBbTqeeMhHgMfCW86mQhdgpETooy3ID", title: "How it works", description: "This application also displays location option for the user that wil show them the location where they can buy the product!")
         }
+        .ignoresSafeArea(.all)
         .tabViewStyle(PageTabViewStyle())
-        .ignoresSafeArea()
-        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        
     }
     
 }

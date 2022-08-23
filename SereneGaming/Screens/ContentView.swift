@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showMenu: Bool = false
+    
     var body: some View {
             NavigationView{
-                ScrollView{
                 ZStack{
                     Image("dark-diamond-tunnel-4k-mobile-wallpaper-616393588636n9a8qqu79")
                         .resizable()
@@ -19,7 +21,7 @@ struct ContentView: View {
                         VStack(alignment: .center, spacing:30){
                             Image("Untitled-2")
                                 .resizable()
-                                .frame(width: 232.0, height: 232.0)
+                                .frame(width: 132.0, height: 132.0)
                             
                             Text("About Serene Gaming:")
                                 .bold()
@@ -89,15 +91,46 @@ struct ContentView: View {
                                 }
                                 .padding(.bottom, 5)
                                 
+                                
                             }
+                            
                         }
+                    GeometryReader{ _ in
+                        
+                        HStack {
+                            Spacer()
+                            SideMenuView()
+                                .ignoresSafeArea()
+                                .offset(x: showMenu ? 0 : UIScreen.main.bounds.width)
+//                                .offset(x: UIScreen.main.bounds.width)
+                        }
+                    }
+                        .toolbar{
+                            Button{
+                                self.showMenu.toggle()
+                                } label:{
+                                    Image(systemName: "text.justify")
+                                        .resizable()
+                                        .imageScale(.large)
+                                        
+                                }
+                            
+                        }
+                        
             }
         
         }
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            }
+            
+            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            .accentColor(.white)
+        
+        
+     
+        
+               
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

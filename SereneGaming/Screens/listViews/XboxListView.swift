@@ -62,7 +62,7 @@ struct XboxListView: View {
                         })
                     }
             }
-        }.accentColor(.white)
+        }.accentColor(.black)
     }
     
 }

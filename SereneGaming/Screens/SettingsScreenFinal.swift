@@ -61,6 +61,7 @@ struct SettingsScreenFinal: View {
                 .navigationTitle("Settings")
                 .navigationBarItems(trailing: Button(action:
                     {print("Clicked")
+            
 //                        presentationMode.wrappedValue.dismiss()
                     }, label:{
                     Image(systemName: "xmark")

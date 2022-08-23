@@ -12,10 +12,12 @@ struct SplashScreen: View {
     @State private var size = 0.8
     @State private var opactiy = 0.7
     
+    
     var body: some View {
-        if isActive {
-            ContentView()
-        }else{
+//        if isActive {
+//            OnboardingView()
+//        }else{
+            
             ZStack{
               Image("dark-diamond-tunnel-4k-mobile-wallpaper-616393588636n9a8qqu79")
                         .resizable()
@@ -60,9 +62,9 @@ struct SplashScreen: View {
         }
         
         
-        }
+//        }
+}
         
-    }
 
 struct SplashScreen_Previews: PreviewProvider {
     static var previews: some View {

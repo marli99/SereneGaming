@@ -17,17 +17,36 @@ struct StartButtonView: View {
         }, label: {
             HStack{
             Text("SKIP")
-            
+
             Image(systemName: "arrow.right.circle")
                 .imageScale(.large)
             }
-            
+
                 .padding(.vertical,10)
                 .padding(.horizontal,16)
                 .background(Capsule()
                                 .strokeBorder(Color.white, lineWidth: 1.35))
                 .accentColor(.white)
         })
+        .background(Color(.black))
+//        NavigationView{
+//        Button(action: {
+//            isOnboarding = true
+//        }) {
+//            NavigationLink(destination: ContentView()) {
+//            Text("SKIP")
+//            Image(systemName: "arrow.right.circle")
+//                                .imageScale(.large)
+//            }
+//                .padding(.vertical,10)
+//                .padding(.horizontal,16)
+//                .background(Capsule()
+//                .strokeBorder(Color.white, lineWidth: 1.35))
+//                .accentColor(.white)
+//        }
+//        .background(Color(.black))
+//
+//    }
     }
 }
 

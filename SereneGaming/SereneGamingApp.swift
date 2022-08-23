@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct SereneGamingApp: App {
-    @AppStorage("isOnboarding") var isOnboarding: Bool = false
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
     
     var body: some Scene {
         WindowGroup {

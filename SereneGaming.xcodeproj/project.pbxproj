@@ -67,6 +67,7 @@
 		F31B1B00289AEAA6002D850B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AFF289AEAA6002D850B /* LocationManager.swift */; };
 		F3490FCE28A3DC0200025D95 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3490FCD28A3DC0200025D95 /* SplashScreen.swift */; };
 		F3490FD128A3E9BF00025D95 /* Wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3490FD028A3E9BF00025D95 /* Wishlist.swift */; };
+		F3714FEE28B3C54600732ED9 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3714FED28B3C54600732ED9 /* SideMenuView.swift */; };
 		F37BAA0B28996F5C004FD80C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BAA0A28996F5C004FD80C /* ContentView.swift */; };
 		F37BAA0D28996F5D004FD80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37BAA0C28996F5D004FD80C /* Assets.xcassets */; };
 		F37BAA1028996F5D004FD80C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37BAA0F28996F5D004FD80C /* Preview Assets.xcassets */; };
@@ -115,6 +116,7 @@
 		F3F1B0F628AE530F00B29E6F /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F1B0F528AE530F00B29E6F /* OnboardingCardView.swift */; };
 		F3F1B0F828AE536400B29E6F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F1B0F728AE536400B29E6F /* OnboardingView.swift */; };
 		F3F1B0FA28AE546000B29E6F /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F1B0F928AE546000B29E6F /* StartButtonView.swift */; };
+		F3F59B6C28B393D4007E9E79 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F59B6B28B393D4007E9E79 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +180,7 @@
 		F31B1AFF289AEAA6002D850B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		F3490FCD28A3DC0200025D95 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F3490FD028A3E9BF00025D95 /* Wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wishlist.swift; sourceTree = "<group>"; };
+		F3714FED28B3C54600732ED9 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		F37BAA0528996F5C004FD80C /* SereneGaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SereneGaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37BAA0A28996F5C004FD80C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F37BAA0C28996F5D004FD80C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -228,6 +231,7 @@
 		F3F1B0F528AE530F00B29E6F /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
 		F3F1B0F728AE536400B29E6F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		F3F1B0F928AE546000B29E6F /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		F3F59B6B28B393D4007E9E79 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +379,7 @@
 		F37BAA0728996F5C004FD80C /* SereneGaming */ = {
 			isa = PBXGroup;
 			children = (
+				F3F59B6A28B391CF007E9E79 /* Fonts */,
 				F31B1AFB289AEA73002D850B /* Map */,
 				F3C86BC3289989CA00FD7962 /* Screens */,
 				F3C86BC02899894E00FD7962 /* Views */,
@@ -576,6 +581,7 @@
 				F31B1AF2289ADC26002D850B /* WiiView.swift */,
 				F3A5DE8728A7C3720069D044 /* NintindoView.swift */,
 				F3F1B0F928AE546000B29E6F /* StartButtonView.swift */,
+				F3714FED28B3C54600732ED9 /* SideMenuView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -593,8 +599,16 @@
 				F3A5DE9628AA34240069D044 /* ConsoleView.swift */,
 				F3F1B0E928AE4DB700B29E6F /* SettingsScreenFinal.swift */,
 				F3F1B0F728AE536400B29E6F /* OnboardingView.swift */,
+				F3F59B6B28B393D4007E9E79 /* Launch Screen.storyboard */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		F3F59B6A28B391CF007E9E79 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -656,6 +670,7 @@
 			files = (
 				F37BAA1028996F5D004FD80C /* Preview Assets.xcassets in Resources */,
 				F3A5DE8028A6C2F60069D044 /* locations.json in Resources */,
+				F3F59B6C28B393D4007E9E79 /* Launch Screen.storyboard in Resources */,
 				F37BAA0D28996F5D004FD80C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -671,6 +686,7 @@
 				F30D8EBD28999F5900A391F1 /* XboxListView.swift in Sources */,
 				F3A5DE8428A7BECF0069D044 /* NintindoDate.swift in Sources */,
 				F31B1AE3289A99D6002D850B /* PlaystationViewModel.swift in Sources */,
+				F3714FEE28B3C54600732ED9 /* SideMenuView.swift in Sources */,
 				F3A5DEAC28AA75F30069D044 /* TimeStrategyXbox.swift in Sources */,
 				F31B1AF3289ADC26002D850B /* WiiView.swift in Sources */,
 				F3C86BCA28998D2600FD7962 /* Xbox.swift in Sources */,

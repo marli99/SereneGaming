@@ -14,7 +14,7 @@ struct XboxDetailsView: View {
     var body: some View{
         ZStack{
             ScrollView{
-                VStack{
+                VStack(alignment: .center){
                     Image(xbox.Image)
                         .renderingMode(.original)
                         .resizable()
@@ -32,17 +32,86 @@ struct XboxDetailsView: View {
                                 .font(.title)
                             Text(xbox.date)
                                 .foregroundColor(.black)
-                                .font(.title3)
+                                .font(.subheadline)
                             Text(xbox.price)
                                 .foregroundColor(.black)
-                                .font(.title3)
+                                .font(.headline)
                         }
                     }
-                    Text(xbox.description)
-                        .foregroundColor(.black
-                        )
-                        .padding(30)
-                        .font(.title3)
+                    
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text(xbox.description)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,0)
+                            .padding(.bottom,0)
+                            .font(.callout)
+                        
+                        Text(xbox.descriptionTwo)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-50)
+                            .padding(.bottom,0)
+                            .font(.callout)
+                        
+                        Text(xbox.SpesificationsTitle)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-30)
+                            .padding(.bottom,0)
+                            .font(.headline)
+                        
+                        Text(xbox.bulletpoint)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-50)
+                            .padding(.bottom,0)
+                            .font(.callout)
+                        
+                        Text(xbox.bulletpointTwo)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-55)
+                            .padding(.bottom,0)
+                            .font(.callout)
+                        
+                        Text(xbox.bulletpointThree)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-55)
+                            .padding(.bottom,0)
+                            .font(.callout)
+                        
+                        Text(xbox.bulletpointFour)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-55)
+                            .padding(.bottom,0)
+                            .font(.callout)
+                        
+                        Text(xbox.bulletpointFive)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-55)
+                            .padding(.bottom,0)
+                            .font(.callout)
+                        
+                        Text(xbox.bulletpointSix)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-55)
+                            .padding(.bottom,0)
+                            .font(.callout)
+                        
+                        Text(xbox.bulletpointSeven)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-55)
+                            .padding(.bottom,0)
+                            .font(.callout)
+                    }
+                    
+                    
                     
     //                SubmitButtonView()
                 }
