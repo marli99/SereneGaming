@@ -20,7 +20,7 @@ struct XboxGamesListView: View {
     var body: some View {
         NavigationView{
             ZStack{
-                VStack{
+                VStack(alignment:.leading, spacing:0){
                     ScrollView{
                     VStack(alignment:.leading, spacing:0){
 //                        Text("Sandbox Games")
@@ -126,23 +126,25 @@ struct XboxGamesListView: View {
                         
                     
                         .listStyle(PlainListStyle())
-                        .navigationBarItems(trailing: Button(action: {
-                            print("settings clicked")
-                                isShowingSettings = true
-                        }){
-                            Text("Explore Xbox Games")
-                                .foregroundColor(.black)
-                                .padding(.trailing,00)
+                        .navigationTitle("Explore Xbox Games")
+                        .navigationBarTitleDisplayMode(.inline)
+//                        .navigationBarItems(leading: Button(action: {
+//                            print("settings clicked")
+//                                isShowingSettings = true
+//                        }){
+//                            Text("Explore Xbox Games")
+//                                .foregroundColor(.black)
+//                                .padding(.trailing,00)
                             
-                                Image(systemName: "gear")
-                                    .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .accentColor(.black)
-                        }
-                        .sheet(isPresented: $isShowingSettings){
-                            SettingsScreenFinal()
-                        })
+//                                Image(systemName: "gear")
+//                                    .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
+//                                    .resizable()
+//                                    .frame(width: 30, height: 30)
+//                                    .accentColor(.black)
+//                            }
+//                        .sheet(isPresented: $isShowingSettings){
+//                            SettingsScreenFinal()
+//                            )
                 
                     }
                         ScrollView{

@@ -15,4 +15,5 @@ struct Wii: Identifiable{
     var price: String
     var description: String
     
+    
 }

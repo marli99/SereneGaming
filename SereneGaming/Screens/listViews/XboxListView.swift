@@ -12,6 +12,7 @@ struct XboxListView: View {
     @StateObject var xboxViewModel: XboxViewModel = XboxViewModel()
     
     @State private var isShowingSettings = false
+    @State private var showMenu: Bool = false
     
     var body: some View {
             NavigationView{
@@ -43,26 +44,55 @@ struct XboxListView: View {
                                                         .opacity(0.8))
         //                            .listRowBackground(Color.black)
                             }
+                            
                         }
                         .listStyle(PlainListStyle())
-                        .navigationTitle("Xbox")
-                        .navigationBarItems(trailing: Button(action: {
-                            print("settings clicked")
-                                isShowingSettings = true
-                        }){
-                                Image(systemName: "gear")
-                                    .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .accentColor(.black)
-                                                        
-                        }
-                        .sheet(isPresented: $isShowingSettings){
-                            SettingsScreenFinal()
-                        })
+//                        .navigationBarTitle("Xbox")
+                        .navigationBarTitle(Text("Xbox"))
+                        .navigationBarTitleDisplayMode(.inline)
+                        
+                        
+//                        .navigationBarItems(trailing: Button(action: {
+//                            print("settings clicked")
+//                                isShowingSettings = true
+//                        }){
+//                                Image(systemName: "gear")
+//                                    .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
+//                                    .resizable()
+//                                    .frame(width: 30, height: 30)
+//                                    .accentColor(.black)
+//
+//                        }
+//                        .sheet(isPresented: $isShowingSettings){
+//                            SettingsScreenFinal()
+//                        })
                     }
+                    GeometryReader{ _ in
+                        
+                        HStack {
+                            Spacer()
+                            SideMenuView()
+                                .ignoresSafeArea()
+                                .offset(x: showMenu ? 0 : UIScreen.main.bounds.width)
+//                                .offset(x: UIScreen.main.bounds.width)
+                        }
+                    }
+                    .toolbar(content: {
+                        Button{
+                            self.showMenu.toggle()
+                            } label:{
+                                Image(systemName: "text.justify")
+                                    .resizable()
+                                    .imageScale(.large)
+                                    
+                            }
+                    })
+                    
             }
-        }.accentColor(.black)
+        }
+            .navigationBarHidden(true)
+            .accentColor(.black)
+
     }
     
 }

@@ -39,7 +39,7 @@ struct XboxDetailsView: View {
                         }
                     }
                     
-                    VStack(alignment: .leading, spacing: 5) {
+                    VStack(alignment: .leading, spacing: 0) {
                         Text(xbox.description)
                             .foregroundColor(.black)
                             .padding(30)
@@ -109,7 +109,53 @@ struct XboxDetailsView: View {
                             .padding(.top,-55)
                             .padding(.bottom,0)
                             .font(.callout)
+                        
                     }
+                    
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text(xbox.bulletpointEight)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-55)
+                            .padding(.bottom,0)
+                            .padding(.leading,-44)
+                            .font(.callout)
+                        
+                        Text(xbox.bulletpointNine)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-55)
+                            .padding(.bottom,0)
+                            .padding(.leading,-44)
+                            .font(.callout)
+                        
+                        Text(xbox.bulletpointTen)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-55)
+                            .padding(.bottom,0)
+                            .padding(.leading,-44)
+                            .font(.callout)
+                        
+                        Text(xbox.bulletpointEleven)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-55)
+                            .padding(.bottom,0)
+                            .padding(.leading,-44)
+                            .font(.callout)
+                        
+                        Text(xbox.bulletpointTwelve)
+                            .foregroundColor(.black)
+                            .padding(30)
+                            .padding(.top,-55)
+                            .padding(.bottom,0)
+                            .padding(.leading,-44)
+                            .font(.callout)
+                        
+                        
+                    }
+                    
                     
                     
                     

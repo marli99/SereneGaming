@@ -30,16 +30,16 @@ struct WiiDetailsView: View{
                             .font(.title)
                         Text(WII.date)
                             .foregroundColor(.black)
-                            .font(.title3)
+                            .font(.subheadline)
                         Text(WII.price)
                             .foregroundColor(.black)
-                            .font(.title3)
+                            .font(.headline)
                     }
                 }
                 Text(WII.description)
                     .foregroundColor(.black)
                     .padding(30)
-                    .font(.title3)
+                    .font(.callout)
                 
 //                SubmitButtonView()
             }

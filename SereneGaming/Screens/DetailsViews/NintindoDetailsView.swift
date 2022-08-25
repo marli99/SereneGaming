@@ -13,7 +13,7 @@ struct NintindoDetailsView: View {
     
     var body: some View {
         ZStack{
-            VStack{
+            VStack(alignment:.center){
                 Image(Nintindo.Image)
                     .renderingMode(.original)
                     .resizable()
@@ -25,23 +25,43 @@ struct NintindoDetailsView: View {
                 
                 HStack{
                     
-                    VStack(alignment: .leading, spacing: 5){
+                    VStack(alignment: .leading, spacing: 0){
                         Text(Nintindo.name)
                             .foregroundColor(.black)
                             .font(.title)
+                            .padding(.leading, 20)
                         Text(Nintindo.date)
                             .foregroundColor(.black)
-                            .font(.title3)
+                            .font(.subheadline)
+                            .padding(.leading, 20)
                         Text(Nintindo.price)
                             .foregroundColor(.black)
-                            .font(.title3)
+                            .font(.headline)
+                            .padding(.leading, 20)
                     }
                 }
-                Text(Nintindo.description)
-                    .foregroundColor(.black
-                    )
-                    .padding(30)
-                    .font(.title3)
+                
+                VStack(alignment:.leading) {
+                    Text(Nintindo.description)
+                        .foregroundColor(.black
+                        )
+                        .padding(30)
+                        .font(.callout)
+                    
+                    Text(Nintindo.descriptionTwo)
+                        .foregroundColor(.black
+                        )
+                        .padding(30)
+                        .padding(.top,-55)
+                        .font(.callout)
+                    
+                    Text(Nintindo.descriptionThree)
+                        .foregroundColor(.black
+                        )
+                        .padding(30)
+                        .padding(.top,-55)
+                        .font(.callout)
+                }
                 
 //                SubmitButtonView()
             }

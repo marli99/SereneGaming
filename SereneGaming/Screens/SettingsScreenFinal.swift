@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct SettingsScreenFinal: View {
+    
+    @State private var showMenu: Bool = false
+    
+    @AppStorage("isDarkMode") var isDarkMode:Bool = false
+    
     var body: some View {
         NavigationView{
-            ScrollView(.vertical, showsIndicators: true){
+            VStack{
                 GroupBox(label: HStack{
                     Text("Serene Gaming")
                     Spacer()
@@ -21,7 +26,6 @@ struct SettingsScreenFinal: View {
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                 })
                 .padding()
-                Spacer()
                 
                 GroupBox(){
                     DisclosureGroup("Development Information"){
@@ -57,24 +61,53 @@ struct SettingsScreenFinal: View {
                         })
                         Image(systemName: "arrow.up.right.square")
                     }.padding()
-                }.padding()
+                }
+                .padding()
                 .navigationTitle("Settings")
-                .navigationBarItems(trailing: Button(action:
-                    {print("Clicked")
             
-//                        presentationMode.wrappedValue.dismiss()
-                    }, label:{
-                    Image(systemName: "xmark")
-                        .foregroundColor(.black)
-            }))
                 
+                
+                GroupBox(){
+                    
+                    HStack{
+                        Text("Theme")
+                      
+                        Spacer()
+                        Picker("Mode", selection: $isDarkMode){
+                                    Text("Light")
+                                        .tag(false)
+                                    Text("Dark")
+                                        .tag(true)
+                            }.pickerStyle(SegmentedPickerStyle()).padding()
+                    }.padding()
+                }.padding()
+                .toolbar(content: {
+                    
+                    NavigationLink(
+                    
+                        destination: ContentView(),
+                        label: {
+                            Image(systemName: "xmark")
+                                .resizable()
+                                .imageScale(.large)
+                        })
+                })
             }
         }
+        
+        .navigationBarHidden(true)
+        .foregroundColor(.primary)
+        .accentColor(.primary)
+        
     }
 }
 
 struct SettingsScreenFinal_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsScreenFinal()
+        Group {
+            SettingsScreenFinal()
+          
+        }
+        
     }
 }

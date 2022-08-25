@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var showMenu: Bool = false
+    @AppStorage("isOnboarding") var isOnboarding: Bool?
     
     var body: some View {
             NavigationView{
@@ -22,6 +23,7 @@ struct ContentView: View {
                             Image("Untitled-2")
                                 .resizable()
                                 .frame(width: 132.0, height: 132.0)
+                                .padding(.top,-70)
                             
                             Text("About Serene Gaming:")
                                 .bold()
@@ -95,39 +97,29 @@ struct ContentView: View {
                             }
                             
                         }
-                    GeometryReader{ _ in
-                        
-                        HStack {
-                            Spacer()
-                            SideMenuView()
-                                .ignoresSafeArea()
-                                .offset(x: showMenu ? 0 : UIScreen.main.bounds.width)
-//                                .offset(x: UIScreen.main.bounds.width)
-                        }
-                    }
-                        .toolbar{
-                            Button{
-                                self.showMenu.toggle()
-                                } label:{
-                                    Image(systemName: "text.justify")
+                        .toolbar(content: {
+                            
+                            NavigationLink(
+                            
+                                destination: SettingsScreenFinal(),
+                                label: {
+                                    Image(systemName: "gear")
                                         .resizable()
                                         .imageScale(.large)
-                                        
-                                }
-                            
-                        }
+                                })
+                        })
+                    
                         
             }
+                
         
         }
-            
+            .navigationBarHidden(true)
             .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             .accentColor(.white)
         
         
-     
-        
-               
+             
     }
 }
 

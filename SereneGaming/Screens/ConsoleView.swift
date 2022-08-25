@@ -19,6 +19,7 @@ struct ConsoleView: View {
                         
                         Text("Choose Gaming Platform:")
                             .foregroundColor(.white)
+                            .padding(.top,-20)
                         
                         VStack(spacing:30){
                             VStack(alignment: .center, spacing:10){
