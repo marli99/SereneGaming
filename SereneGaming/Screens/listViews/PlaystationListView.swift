@@ -90,20 +90,15 @@ struct PlaystationListView: View {
                                     .resizable()
                                     .imageScale(.large)
                                     
-                                    
                             }
                         
-                        
                     })
-                    
                     
                     
                 }
                 
                 
-                
             }
-            .accentColor(.black)
             
             
             

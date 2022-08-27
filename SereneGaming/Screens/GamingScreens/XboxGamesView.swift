@@ -89,7 +89,7 @@ struct XboxGamesView: View {
                                 Image("PS4-CaseRPG")
                                     .resizable()
                                     .frame(width:252.0, height: 192.0)
-                                Text("Role-playing")
+                                Text("Role-playing Games")
                                     .foregroundColor(.white)
                             }
                             VStack{

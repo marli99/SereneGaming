@@ -31,14 +31,14 @@ struct XboxSandboxDetailsView: View {
                             .font(.title)
                         Text(sandboXbox.price)
                             .foregroundColor(.black)
-                            .font(.system(size: 15))
+                            .font(.headline)
                     }
                 }
                 Text(sandboXbox.description)
                     .foregroundColor(.black
                     )
                     .padding(30)
-                    .font(.system(size: 17))
+                    .font(.callout)
                 
 //                SubmitButtonView()
             }

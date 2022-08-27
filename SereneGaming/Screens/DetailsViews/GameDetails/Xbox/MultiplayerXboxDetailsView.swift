@@ -30,14 +30,14 @@ struct MultiplayerXboxDetailsView: View {
                             .font(.title)
                         Text(multiXbox.price)
                             .foregroundColor(.black)
-                            .font(.system(size: 15))
+                            .font(.headline)
                     }
                 }
                 Text(multiXbox.description)
                     .foregroundColor(.black
                     )
                     .padding(30)
-                    .font(.system(size: 17))
+                    .font(.callout)
                 
 //                SubmitButtonView()
             }

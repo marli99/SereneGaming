@@ -31,14 +31,14 @@ struct PlaystationSandboxDetailsView: View {
                             .font(.title)
                         Text(sandboXPlaystation.price)
                             .foregroundColor(.black)
-                            .font(.system(size: 15))
+                            .font(.headline)
                     }
                 }
                 Text(sandboXPlaystation.description)
                     .foregroundColor(.black
                     )
                     .padding(30)
-                    .font(.system(size: 17))
+                    .font(.callout)
                 
 //                SubmitButtonView()
             }

@@ -30,14 +30,14 @@ struct XboxRPGDetailsView: View {
                             .font(.title)
                         Text(rPGXbox.price)
                             .foregroundColor(.black)
-                            .font(.system(size: 15))
+                            .font(.headline)
                     }
                 }
                 Text(rPGXbox.description)
                     .foregroundColor(.black
                     )
                     .padding(30)
-                    .font(.system(size: 17))
+                    .font(.callout)
                 
 //                SubmitButtonView()
             }

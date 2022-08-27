@@ -30,14 +30,14 @@ struct ShooterPlaystationDetailsView: View {
                             .font(.title)
                         Text(shooterPlaystation.price)
                             .foregroundColor(.black)
-                            .font(.system(size: 15))
+                            .font(.headline)
                     }
                 }
                 Text(shooterPlaystation.description)
                     .foregroundColor(.black
                     )
                     .padding(30)
-                    .font(.system(size: 17))
+                    .font(.callout)
                 
 //                SubmitButtonView()
             }

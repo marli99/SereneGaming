@@ -24,20 +24,21 @@ struct MultiplayerPlaystationDetailsView: View {
                 
                 HStack{
                     
-                    VStack(alignment: .leading, spacing: 5){
+                    HStack(spacing: 200){
                         Text(multiPlaystation.name)
                             .foregroundColor(.black)
                             .font(.title)
+                        
                         Text(multiPlaystation.price)
                             .foregroundColor(.black)
-                            .font(.system(size: 15))
+                            .font(.headline)
                     }
                 }
                 Text(multiPlaystation.description)
                     .foregroundColor(.black
                     )
                     .padding(30)
-                    .font(.system(size: 17))
+                    .font(.callout)
                 
 //                SubmitButtonView()
             }

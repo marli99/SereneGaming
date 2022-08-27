@@ -29,14 +29,14 @@ struct RolePlayingXboxDetailsView: View {
                             .font(.title)
                         Text(rolePlayXbox.price)
                             .foregroundColor(.black)
-                            .font(.system(size: 15))
+                            .font(.headline)
                     }
                 }
                 Text(rolePlayXbox.description)
                     .foregroundColor(.black
                     )
                     .padding(30)
-                    .font(.system(size: 17))
+                    .font(.callout)
                 
 //                SubmitButtonView()
             }

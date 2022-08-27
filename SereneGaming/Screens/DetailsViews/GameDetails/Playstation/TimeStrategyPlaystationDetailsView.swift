@@ -30,14 +30,14 @@ struct TimeStrategyPlaystationDetailsView: View {
                             .font(.title)
                         Text(timeStrategyPlaystation.price)
                             .foregroundColor(.black)
-                            .font(.system(size: 15))
+                            .font(.headline)
                     }
                 }
                 Text(timeStrategyPlaystation.description)
                     .foregroundColor(.black
                     )
                     .padding(30)
-                    .font(.system(size: 17))
+                    .font(.callout)
                 
 //                SubmitButtonView()
             }

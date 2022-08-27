@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F30D8EBD28999F5900A391F1 /* XboxListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30D8EBC28999F5900A391F1 /* XboxListView.swift */; };
 		F311797328AE1DF800B1932F /* RolePlayingXboxDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F311797228AE1DF800B1932F /* RolePlayingXboxDetailsView.swift */; };
-		F311797528AE1E1E00B1932F /* RolePlayingXboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F311797428AE1E1E00B1932F /* RolePlayingXboxView.swift */; };
+		F311797528AE1E1E00B1932F /* PuzzleXboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F311797428AE1E1E00B1932F /* PuzzleXboxView.swift */; };
 		F311797728AE1E3B00B1932F /* RolePlayingXbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F311797628AE1E3B00B1932F /* RolePlayingXbox.swift */; };
 		F311797928AE1E4D00B1932F /* RolePlayingXboxData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F311797828AE1E4D00B1932F /* RolePlayingXboxData.swift */; };
 		F311797B28AE1EA300B1932F /* RolePlayingXboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F311797A28AE1EA300B1932F /* RolePlayingXboxViewModel.swift */; };
@@ -35,8 +35,6 @@
 		F31179C328AE3A8D00B1932F /* PlaystationGamesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31179C228AE3A8D00B1932F /* PlaystationGamesListView.swift */; };
 		F31179C528AE3AC800B1932F /* SandboxPlaystationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31179C428AE3AC800B1932F /* SandboxPlaystationViewModel.swift */; };
 		F31179C728AE3AEF00B1932F /* SandboxPlaystationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31179C628AE3AEF00B1932F /* SandboxPlaystationData.swift */; };
-		F31179C928AE3B6600B1932F /* PlaystationSandboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31179C828AE3B6600B1932F /* PlaystationSandboxView.swift */; };
-		F31179CC28AE3C3E00B1932F /* PlaystationSandboxDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31179CB28AE3C3E00B1932F /* PlaystationSandboxDetailsView.swift */; };
 		F31179CE28AE3DA200B1932F /* TimeStrategyPlaystationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31179CD28AE3DA200B1932F /* TimeStrategyPlaystationViewModel.swift */; };
 		F31179D028AE3DE200B1932F /* TimeStrategyPlaystationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31179CF28AE3DE200B1932F /* TimeStrategyPlaystationData.swift */; };
 		F31179D228AE3E2400B1932F /* TimeStrategyPlaystationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31179D128AE3E2400B1932F /* TimeStrategyPlaystationDetailsView.swift */; };
@@ -65,6 +63,85 @@
 		F31B1AF7289AE83C002D850B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AF6289AE83C002D850B /* MapView.swift */; };
 		F31B1AFA289AE949002D850B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AF9289AE949002D850B /* Coordinator.swift */; };
 		F31B1B00289AEAA6002D850B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31B1AFF289AEAA6002D850B /* LocationManager.swift */; };
+		F342D35928B79F8E0040275C /* SandboxPlaystationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D35828B79F8E0040275C /* SandboxPlaystationView.swift */; };
+		F342D35B28B7A2650040275C /* RolePlayingPlaystationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D35A28B7A2650040275C /* RolePlayingPlaystationDetailsView.swift */; };
+		F342D35D28B7A34A0040275C /* PuzzlePlaystationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D35C28B7A34A0040275C /* PuzzlePlaystationView.swift */; };
+		F342D36A28B7A5490040275C /* RPGPlaystationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D36928B7A5490040275C /* RPGPlaystationView.swift */; };
+		F342D36E28B7AA090040275C /* PlaystationSandboxDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D36D28B7AA090040275C /* PlaystationSandboxDetailsView.swift */; };
+		F342D37028B7AA8C0040275C /* PlaystationRPGDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D36F28B7AA8C0040275C /* PlaystationRPGDetailsView.swift */; };
+		F342D37228B7AADE0040275C /* SportPlaystationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D37128B7AADE0040275C /* SportPlaystationDetailsView.swift */; };
+		F342D37828B7AF750040275C /* SandboWIIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D37728B7AF750040275C /* SandboWIIViewModel.swift */; };
+		F342D37A28B7AFD10040275C /* SandboxWIIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D37928B7AFD10040275C /* SandboxWIIData.swift */; };
+		F342D37C28B7B00B0040275C /* SandboxWII.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D37B28B7B00B0040275C /* SandboxWII.swift */; };
+		F342D38028B8BDEA0040275C /* SandboxWiiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D37F28B8BDEA0040275C /* SandboxWiiView.swift */; };
+		F342D38328B8BE670040275C /* WiiSandboxDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D38228B8BE670040275C /* WiiSandboxDetailsView.swift */; };
+		F342D38528B8C0720040275C /* WiiGamesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D38428B8C0720040275C /* WiiGamesListView.swift */; };
+		F342D38728B8C3EA0040275C /* TimeStrategyWii.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D38628B8C3EA0040275C /* TimeStrategyWii.swift */; };
+		F342D38928B8C4180040275C /* TimeStrategyWiiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D38828B8C4180040275C /* TimeStrategyWiiData.swift */; };
+		F342D38B28B8C4470040275C /* TimeStrategyWiiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D38A28B8C4470040275C /* TimeStrategyWiiViewModel.swift */; };
+		F342D38D28B8C9930040275C /* TimeStrategyWiiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D38C28B8C9930040275C /* TimeStrategyWiiView.swift */; };
+		F342D38F28B8C9DF0040275C /* TimeStrategyWiiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D38E28B8C9DF0040275C /* TimeStrategyWiiDetailsView.swift */; };
+		F342D39128B8CB020040275C /* ShooterWii.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D39028B8CB020040275C /* ShooterWii.swift */; };
+		F342D39328B8CB230040275C /* ShooterWiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D39228B8CB230040275C /* ShooterWiData.swift */; };
+		F342D39528B8CB520040275C /* ShooterWiiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D39428B8CB520040275C /* ShooterWiiViewModel.swift */; };
+		F342D39728B8CBC40040275C /* ShooterWiiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D39628B8CBC40040275C /* ShooterWiiView.swift */; };
+		F342D39928B8CC0D0040275C /* ShooterWiiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D39828B8CC0D0040275C /* ShooterWiiDetailsView.swift */; };
+		F342D39B28B8D12C0040275C /* MultiWii.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D39A28B8D12C0040275C /* MultiWii.swift */; };
+		F342D39D28B8D1540040275C /* MultiplayerWiiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D39C28B8D1540040275C /* MultiplayerWiiData.swift */; };
+		F342D39F28B8D70A0040275C /* MultiplayerWiiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D39E28B8D70A0040275C /* MultiplayerWiiViewModel.swift */; };
+		F342D3A128B8D75B0040275C /* MultiplayerWiiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3A028B8D75B0040275C /* MultiplayerWiiView.swift */; };
+		F342D3A328B8D7A20040275C /* MultiplayerWiiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3A228B8D7A20040275C /* MultiplayerWiiDetailsView.swift */; };
+		F342D3A528B8DCF30040275C /* RPGWii.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3A428B8DCF30040275C /* RPGWii.swift */; };
+		F342D3A728B8DD060040275C /* RPGPWiiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3A628B8DD060040275C /* RPGPWiiData.swift */; };
+		F342D3A928B8E1300040275C /* RPGWiiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3A828B8E1300040275C /* RPGWiiViewModel.swift */; };
+		F342D3AB28B8E17C0040275C /* RPGWiiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3AA28B8E17C0040275C /* RPGWiiView.swift */; };
+		F342D3AD28B8E1F80040275C /* WiiRPGDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3AC28B8E1F80040275C /* WiiRPGDetailsView.swift */; };
+		F342D3BF28B8EC6E0040275C /* SportWii.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3BE28B8EC6E0040275C /* SportWii.swift */; };
+		F342D3C128B8EC840040275C /* SportWiiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3C028B8EC840040275C /* SportWiiData.swift */; };
+		F342D3C328B8F1DD0040275C /* SportWiiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3C228B8F1DD0040275C /* SportWiiViewModel.swift */; };
+		F342D3C528B8F3260040275C /* SportWiiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3C428B8F3260040275C /* SportWiiView.swift */; };
+		F342D3C728B8F3600040275C /* SportWiiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3C628B8F3600040275C /* SportWiiDetailsView.swift */; };
+		F342D3C928B8F40C0040275C /* PuzzleWii.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3C828B8F40C0040275C /* PuzzleWii.swift */; };
+		F342D3CB28B8F41D0040275C /* PuzzleWiiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3CA28B8F41D0040275C /* PuzzleWiiData.swift */; };
+		F342D3CD28B8F4440040275C /* PuzzleWiiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3CC28B8F4440040275C /* PuzzleWiiViewModel.swift */; };
+		F342D3CF28B8F7A30040275C /* PuzzleWiiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3CE28B8F7A30040275C /* PuzzleWiiView.swift */; };
+		F342D3D128B8F7DA0040275C /* PuzzleWiiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3D028B8F7DA0040275C /* PuzzleWiiDetailsView.swift */; };
+		F342D3D428B91CDE0040275C /* SandboxNintendo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3D328B91CDE0040275C /* SandboxNintendo.swift */; };
+		F342D3D628B91CF30040275C /* TimeStrategyNintendo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3D528B91CF30040275C /* TimeStrategyNintendo.swift */; };
+		F342D3D828B91D020040275C /* ShooterNintendo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3D728B91D020040275C /* ShooterNintendo.swift */; };
+		F342D3DA28B91D120040275C /* MultiNintendo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3D928B91D120040275C /* MultiNintendo.swift */; };
+		F342D3DC28B91D210040275C /* RPGNintendo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3DB28B91D210040275C /* RPGNintendo.swift */; };
+		F342D3DE28B91D310040275C /* SportNintendo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3DD28B91D310040275C /* SportNintendo.swift */; };
+		F342D3E028B91D3F0040275C /* PuzzleNintendo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3DF28B91D3F0040275C /* PuzzleNintendo.swift */; };
+		F342D3E328B91D5C0040275C /* SandboxNintendoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3E228B91D5C0040275C /* SandboxNintendoData.swift */; };
+		F342D3E628B92A300040275C /* SandboxNintendoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3E528B92A300040275C /* SandboxNintendoViewModel.swift */; };
+		F342D3E928B92AC80040275C /* SandboxNintendoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3E828B92AC80040275C /* SandboxNintendoView.swift */; };
+		F342D3EC28B92B010040275C /* NintendoSandboxDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3EB28B92B010040275C /* NintendoSandboxDetailsView.swift */; };
+		F342D3EE28B92B480040275C /* NintendoGamesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3ED28B92B480040275C /* NintendoGamesListView.swift */; };
+		F342D3F028B92E630040275C /* TimeStrategyNintendoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3EF28B92E630040275C /* TimeStrategyNintendoData.swift */; };
+		F342D3F228B93AF10040275C /* TimeStrategyNintendoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3F128B93AF10040275C /* TimeStrategyNintendoViewModel.swift */; };
+		F342D3F428B93B350040275C /* TimeStrategyNintendoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3F328B93B350040275C /* TimeStrategyNintendoView.swift */; };
+		F342D3F628B93B640040275C /* TimeStrategyNintendoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3F528B93B640040275C /* TimeStrategyNintendoDetailsView.swift */; };
+		F342D3F828B93C2A0040275C /* ShooterNintendoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3F728B93C2A0040275C /* ShooterNintendoViewModel.swift */; };
+		F342D3FA28B93C650040275C /* ShooterNintendoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3F928B93C650040275C /* ShooterNintendoData.swift */; };
+		F342D3FC28B942F70040275C /* ShooterNintendoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3FB28B942F70040275C /* ShooterNintendoView.swift */; };
+		F342D3FE28B943990040275C /* ShooterNintendoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3FD28B943990040275C /* ShooterNintendoDetailsView.swift */; };
+		F342D40028B944830040275C /* MultiplayerNintendoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D3FF28B944830040275C /* MultiplayerNintendoData.swift */; };
+		F342D40228B94ACB0040275C /* MultiplayerNintendoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D40128B94ACB0040275C /* MultiplayerNintendoViewModel.swift */; };
+		F342D40428B94B2A0040275C /* MultiplayerNintendoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D40328B94B2A0040275C /* MultiplayerNintendoView.swift */; };
+		F342D40628B94B650040275C /* MultiplayerNintendoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D40528B94B650040275C /* MultiplayerNintendoDetailsView.swift */; };
+		F342D40828B94C220040275C /* RPGNintendoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D40728B94C220040275C /* RPGNintendoData.swift */; };
+		F342D40A28B9571E0040275C /* RPGNintendoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D40928B9571E0040275C /* RPGNintendoViewModel.swift */; };
+		F342D40C28B958270040275C /* NintendoRPGDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D40B28B958270040275C /* NintendoRPGDetailsView.swift */; };
+		F342D40E28B958480040275C /* RPGNintendoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D40D28B958480040275C /* RPGNintendoView.swift */; };
+		F342D41028B959BC0040275C /* SportNintendoiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D40F28B959BC0040275C /* SportNintendoiData.swift */; };
+		F342D41228B95D9C0040275C /* SportNintendoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D41128B95D9C0040275C /* SportNintendoViewModel.swift */; };
+		F342D41428B95E190040275C /* SportNintendoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D41328B95E190040275C /* SportNintendoView.swift */; };
+		F342D41628B95E570040275C /* SportNintendoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D41528B95E570040275C /* SportNintendoDetailsView.swift */; };
+		F342D41828B95F520040275C /* PuzzleNintendoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D41728B95F520040275C /* PuzzleNintendoData.swift */; };
+		F342D41A28B962420040275C /* PuzzleNintendoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D41928B962420040275C /* PuzzleNintendoViewModel.swift */; };
+		F342D41C28B962780040275C /* PuzzleNintendoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D41B28B962780040275C /* PuzzleNintendoView.swift */; };
+		F342D41E28B962B10040275C /* PuzzleNintendoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D41D28B962B10040275C /* PuzzleNintendoDetailsView.swift */; };
 		F3490FCE28A3DC0200025D95 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3490FCD28A3DC0200025D95 /* SplashScreen.swift */; };
 		F3490FD128A3E9BF00025D95 /* Wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3490FD028A3E9BF00025D95 /* Wishlist.swift */; };
 		F3714FEE28B3C54600732ED9 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3714FED28B3C54600732ED9 /* SideMenuView.swift */; };
@@ -122,7 +199,7 @@
 /* Begin PBXFileReference section */
 		F30D8EBC28999F5900A391F1 /* XboxListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XboxListView.swift; sourceTree = "<group>"; };
 		F311797228AE1DF800B1932F /* RolePlayingXboxDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolePlayingXboxDetailsView.swift; sourceTree = "<group>"; };
-		F311797428AE1E1E00B1932F /* RolePlayingXboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolePlayingXboxView.swift; sourceTree = "<group>"; };
+		F311797428AE1E1E00B1932F /* PuzzleXboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleXboxView.swift; sourceTree = "<group>"; };
 		F311797628AE1E3B00B1932F /* RolePlayingXbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolePlayingXbox.swift; sourceTree = "<group>"; };
 		F311797828AE1E4D00B1932F /* RolePlayingXboxData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolePlayingXboxData.swift; sourceTree = "<group>"; };
 		F311797A28AE1EA300B1932F /* RolePlayingXboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolePlayingXboxViewModel.swift; sourceTree = "<group>"; };
@@ -148,8 +225,6 @@
 		F31179C228AE3A8D00B1932F /* PlaystationGamesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaystationGamesListView.swift; sourceTree = "<group>"; };
 		F31179C428AE3AC800B1932F /* SandboxPlaystationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxPlaystationViewModel.swift; sourceTree = "<group>"; };
 		F31179C628AE3AEF00B1932F /* SandboxPlaystationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SandboxPlaystationData.swift; path = ../Xbox/SandboxPlaystationData.swift; sourceTree = "<group>"; };
-		F31179C828AE3B6600B1932F /* PlaystationSandboxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaystationSandboxView.swift; sourceTree = "<group>"; };
-		F31179CB28AE3C3E00B1932F /* PlaystationSandboxDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaystationSandboxDetailsView.swift; sourceTree = "<group>"; };
 		F31179CD28AE3DA200B1932F /* TimeStrategyPlaystationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStrategyPlaystationViewModel.swift; sourceTree = "<group>"; };
 		F31179CF28AE3DE200B1932F /* TimeStrategyPlaystationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeStrategyPlaystationData.swift; path = ../Xbox/TimeStrategyPlaystationData.swift; sourceTree = "<group>"; };
 		F31179D128AE3E2400B1932F /* TimeStrategyPlaystationDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStrategyPlaystationDetailsView.swift; sourceTree = "<group>"; };
@@ -178,6 +253,85 @@
 		F31B1AF6289AE83C002D850B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F31B1AF9289AE949002D850B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F31B1AFF289AEAA6002D850B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F342D35828B79F8E0040275C /* SandboxPlaystationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxPlaystationView.swift; sourceTree = "<group>"; };
+		F342D35A28B7A2650040275C /* RolePlayingPlaystationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolePlayingPlaystationDetailsView.swift; sourceTree = "<group>"; };
+		F342D35C28B7A34A0040275C /* PuzzlePlaystationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzlePlaystationView.swift; sourceTree = "<group>"; };
+		F342D36928B7A5490040275C /* RPGPlaystationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPGPlaystationView.swift; sourceTree = "<group>"; };
+		F342D36D28B7AA090040275C /* PlaystationSandboxDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaystationSandboxDetailsView.swift; sourceTree = "<group>"; };
+		F342D36F28B7AA8C0040275C /* PlaystationRPGDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaystationRPGDetailsView.swift; sourceTree = "<group>"; };
+		F342D37128B7AADE0040275C /* SportPlaystationDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportPlaystationDetailsView.swift; sourceTree = "<group>"; };
+		F342D37728B7AF750040275C /* SandboWIIViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboWIIViewModel.swift; sourceTree = "<group>"; };
+		F342D37928B7AFD10040275C /* SandboxWIIData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxWIIData.swift; sourceTree = "<group>"; };
+		F342D37B28B7B00B0040275C /* SandboxWII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxWII.swift; sourceTree = "<group>"; };
+		F342D37F28B8BDEA0040275C /* SandboxWiiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxWiiView.swift; sourceTree = "<group>"; };
+		F342D38228B8BE670040275C /* WiiSandboxDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WiiSandboxDetailsView.swift; sourceTree = "<group>"; };
+		F342D38428B8C0720040275C /* WiiGamesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WiiGamesListView.swift; sourceTree = "<group>"; };
+		F342D38628B8C3EA0040275C /* TimeStrategyWii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStrategyWii.swift; sourceTree = "<group>"; };
+		F342D38828B8C4180040275C /* TimeStrategyWiiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeStrategyWiiData.swift; path = SereneGaming/Data/GameData/WII/TimeStrategyWiiData.swift; sourceTree = SOURCE_ROOT; };
+		F342D38A28B8C4470040275C /* TimeStrategyWiiViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStrategyWiiViewModel.swift; sourceTree = "<group>"; };
+		F342D38C28B8C9930040275C /* TimeStrategyWiiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStrategyWiiView.swift; sourceTree = "<group>"; };
+		F342D38E28B8C9DF0040275C /* TimeStrategyWiiDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStrategyWiiDetailsView.swift; sourceTree = "<group>"; };
+		F342D39028B8CB020040275C /* ShooterWii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShooterWii.swift; sourceTree = "<group>"; };
+		F342D39228B8CB230040275C /* ShooterWiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShooterWiData.swift; path = SereneGaming/Data/GameData/WII/ShooterWiData.swift; sourceTree = SOURCE_ROOT; };
+		F342D39428B8CB520040275C /* ShooterWiiViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShooterWiiViewModel.swift; sourceTree = "<group>"; };
+		F342D39628B8CBC40040275C /* ShooterWiiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShooterWiiView.swift; sourceTree = "<group>"; };
+		F342D39828B8CC0D0040275C /* ShooterWiiDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShooterWiiDetailsView.swift; sourceTree = "<group>"; };
+		F342D39A28B8D12C0040275C /* MultiWii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiWii.swift; sourceTree = "<group>"; };
+		F342D39C28B8D1540040275C /* MultiplayerWiiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultiplayerWiiData.swift; path = SereneGaming/Data/GameData/WII/MultiplayerWiiData.swift; sourceTree = SOURCE_ROOT; };
+		F342D39E28B8D70A0040275C /* MultiplayerWiiViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerWiiViewModel.swift; sourceTree = "<group>"; };
+		F342D3A028B8D75B0040275C /* MultiplayerWiiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerWiiView.swift; sourceTree = "<group>"; };
+		F342D3A228B8D7A20040275C /* MultiplayerWiiDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerWiiDetailsView.swift; sourceTree = "<group>"; };
+		F342D3A428B8DCF30040275C /* RPGWii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPGWii.swift; sourceTree = "<group>"; };
+		F342D3A628B8DD060040275C /* RPGPWiiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPGPWiiData.swift; sourceTree = "<group>"; };
+		F342D3A828B8E1300040275C /* RPGWiiViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPGWiiViewModel.swift; sourceTree = "<group>"; };
+		F342D3AA28B8E17C0040275C /* RPGWiiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPGWiiView.swift; sourceTree = "<group>"; };
+		F342D3AC28B8E1F80040275C /* WiiRPGDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WiiRPGDetailsView.swift; sourceTree = "<group>"; };
+		F342D3BE28B8EC6E0040275C /* SportWii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportWii.swift; sourceTree = "<group>"; };
+		F342D3C028B8EC840040275C /* SportWiiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportWiiData.swift; sourceTree = "<group>"; };
+		F342D3C228B8F1DD0040275C /* SportWiiViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportWiiViewModel.swift; sourceTree = "<group>"; };
+		F342D3C428B8F3260040275C /* SportWiiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportWiiView.swift; sourceTree = "<group>"; };
+		F342D3C628B8F3600040275C /* SportWiiDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportWiiDetailsView.swift; sourceTree = "<group>"; };
+		F342D3C828B8F40C0040275C /* PuzzleWii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleWii.swift; sourceTree = "<group>"; };
+		F342D3CA28B8F41D0040275C /* PuzzleWiiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleWiiData.swift; sourceTree = "<group>"; };
+		F342D3CC28B8F4440040275C /* PuzzleWiiViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleWiiViewModel.swift; sourceTree = "<group>"; };
+		F342D3CE28B8F7A30040275C /* PuzzleWiiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleWiiView.swift; sourceTree = "<group>"; };
+		F342D3D028B8F7DA0040275C /* PuzzleWiiDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleWiiDetailsView.swift; sourceTree = "<group>"; };
+		F342D3D328B91CDE0040275C /* SandboxNintendo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxNintendo.swift; sourceTree = "<group>"; };
+		F342D3D528B91CF30040275C /* TimeStrategyNintendo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStrategyNintendo.swift; sourceTree = "<group>"; };
+		F342D3D728B91D020040275C /* ShooterNintendo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShooterNintendo.swift; sourceTree = "<group>"; };
+		F342D3D928B91D120040275C /* MultiNintendo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiNintendo.swift; sourceTree = "<group>"; };
+		F342D3DB28B91D210040275C /* RPGNintendo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPGNintendo.swift; sourceTree = "<group>"; };
+		F342D3DD28B91D310040275C /* SportNintendo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportNintendo.swift; sourceTree = "<group>"; };
+		F342D3DF28B91D3F0040275C /* PuzzleNintendo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleNintendo.swift; sourceTree = "<group>"; };
+		F342D3E228B91D5C0040275C /* SandboxNintendoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxNintendoData.swift; sourceTree = "<group>"; };
+		F342D3E528B92A300040275C /* SandboxNintendoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxNintendoViewModel.swift; sourceTree = "<group>"; };
+		F342D3E828B92AC80040275C /* SandboxNintendoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandboxNintendoView.swift; sourceTree = "<group>"; };
+		F342D3EB28B92B010040275C /* NintendoSandboxDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NintendoSandboxDetailsView.swift; sourceTree = "<group>"; };
+		F342D3ED28B92B480040275C /* NintendoGamesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NintendoGamesListView.swift; sourceTree = "<group>"; };
+		F342D3EF28B92E630040275C /* TimeStrategyNintendoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStrategyNintendoData.swift; sourceTree = "<group>"; };
+		F342D3F128B93AF10040275C /* TimeStrategyNintendoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStrategyNintendoViewModel.swift; sourceTree = "<group>"; };
+		F342D3F328B93B350040275C /* TimeStrategyNintendoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStrategyNintendoView.swift; sourceTree = "<group>"; };
+		F342D3F528B93B640040275C /* TimeStrategyNintendoDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStrategyNintendoDetailsView.swift; sourceTree = "<group>"; };
+		F342D3F728B93C2A0040275C /* ShooterNintendoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShooterNintendoViewModel.swift; sourceTree = "<group>"; };
+		F342D3F928B93C650040275C /* ShooterNintendoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShooterNintendoData.swift; sourceTree = "<group>"; };
+		F342D3FB28B942F70040275C /* ShooterNintendoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShooterNintendoView.swift; sourceTree = "<group>"; };
+		F342D3FD28B943990040275C /* ShooterNintendoDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShooterNintendoDetailsView.swift; sourceTree = "<group>"; };
+		F342D3FF28B944830040275C /* MultiplayerNintendoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerNintendoData.swift; sourceTree = "<group>"; };
+		F342D40128B94ACB0040275C /* MultiplayerNintendoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerNintendoViewModel.swift; sourceTree = "<group>"; };
+		F342D40328B94B2A0040275C /* MultiplayerNintendoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerNintendoView.swift; sourceTree = "<group>"; };
+		F342D40528B94B650040275C /* MultiplayerNintendoDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerNintendoDetailsView.swift; sourceTree = "<group>"; };
+		F342D40728B94C220040275C /* RPGNintendoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPGNintendoData.swift; sourceTree = "<group>"; };
+		F342D40928B9571E0040275C /* RPGNintendoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPGNintendoViewModel.swift; sourceTree = "<group>"; };
+		F342D40B28B958270040275C /* NintendoRPGDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NintendoRPGDetailsView.swift; sourceTree = "<group>"; };
+		F342D40D28B958480040275C /* RPGNintendoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPGNintendoView.swift; sourceTree = "<group>"; };
+		F342D40F28B959BC0040275C /* SportNintendoiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportNintendoiData.swift; sourceTree = "<group>"; };
+		F342D41128B95D9C0040275C /* SportNintendoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportNintendoViewModel.swift; sourceTree = "<group>"; };
+		F342D41328B95E190040275C /* SportNintendoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportNintendoView.swift; sourceTree = "<group>"; };
+		F342D41528B95E570040275C /* SportNintendoDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportNintendoDetailsView.swift; sourceTree = "<group>"; };
+		F342D41728B95F520040275C /* PuzzleNintendoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleNintendoData.swift; sourceTree = "<group>"; };
+		F342D41928B962420040275C /* PuzzleNintendoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleNintendoViewModel.swift; sourceTree = "<group>"; };
+		F342D41B28B962780040275C /* PuzzleNintendoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleNintendoView.swift; sourceTree = "<group>"; };
+		F342D41D28B962B10040275C /* PuzzleNintendoDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleNintendoDetailsView.swift; sourceTree = "<group>"; };
 		F3490FCD28A3DC0200025D95 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F3490FD028A3E9BF00025D95 /* Wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wishlist.swift; sourceTree = "<group>"; };
 		F3714FED28B3C54600732ED9 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
@@ -291,10 +445,12 @@
 			isa = PBXGroup;
 			children = (
 				F31179C028AE38A200B1932F /* SportPlaystationView.swift */,
-				F31179C828AE3B6600B1932F /* PlaystationSandboxView.swift */,
 				F31179D328AE402C00B1932F /* TimeStrategyPlaystationView.swift */,
 				F31179DB28AE413400B1932F /* ShooterPlaystationView.swift */,
 				F31179E328AE42ED00B1932F /* MultiplayerPlaystationView.swift */,
+				F342D35828B79F8E0040275C /* SandboxPlaystationView.swift */,
+				F342D35C28B7A34A0040275C /* PuzzlePlaystationView.swift */,
+				F342D36928B7A5490040275C /* RPGPlaystationView.swift */,
 			);
 			path = Playstation;
 			sourceTree = "<group>";
@@ -302,10 +458,13 @@
 		F31179CA28AE3C2A00B1932F /* Playstation */ = {
 			isa = PBXGroup;
 			children = (
-				F31179CB28AE3C3E00B1932F /* PlaystationSandboxDetailsView.swift */,
 				F31179D128AE3E2400B1932F /* TimeStrategyPlaystationDetailsView.swift */,
 				F31179DD28AE416F00B1932F /* ShooterPlaystationDetailsView.swift */,
 				F31179E528AE434800B1932F /* MultiplayerPlaystationDetailsView.swift */,
+				F342D35A28B7A2650040275C /* RolePlayingPlaystationDetailsView.swift */,
+				F342D36D28B7AA090040275C /* PlaystationSandboxDetailsView.swift */,
+				F342D36F28B7AA8C0040275C /* PlaystationRPGDetailsView.swift */,
+				F342D37128B7AADE0040275C /* SportPlaystationDetailsView.swift */,
 			);
 			path = Playstation;
 			sourceTree = "<group>";
@@ -360,6 +519,146 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		F342D37328B7AF3C0040275C /* WII */ = {
+			isa = PBXGroup;
+			children = (
+				F342D37928B7AFD10040275C /* SandboxWIIData.swift */,
+				F342D38828B8C4180040275C /* TimeStrategyWiiData.swift */,
+				F342D39228B8CB230040275C /* ShooterWiData.swift */,
+				F342D39C28B8D1540040275C /* MultiplayerWiiData.swift */,
+				F342D3A628B8DD060040275C /* RPGPWiiData.swift */,
+				F342D3C028B8EC840040275C /* SportWiiData.swift */,
+				F342D3CA28B8F41D0040275C /* PuzzleWiiData.swift */,
+			);
+			path = WII;
+			sourceTree = "<group>";
+		};
+		F342D37628B7AF650040275C /* WII */ = {
+			isa = PBXGroup;
+			children = (
+				F342D37728B7AF750040275C /* SandboWIIViewModel.swift */,
+				F342D38A28B8C4470040275C /* TimeStrategyWiiViewModel.swift */,
+				F342D39428B8CB520040275C /* ShooterWiiViewModel.swift */,
+				F342D39E28B8D70A0040275C /* MultiplayerWiiViewModel.swift */,
+				F342D3A828B8E1300040275C /* RPGWiiViewModel.swift */,
+				F342D3C228B8F1DD0040275C /* SportWiiViewModel.swift */,
+				F342D3CC28B8F4440040275C /* PuzzleWiiViewModel.swift */,
+			);
+			path = WII;
+			sourceTree = "<group>";
+		};
+		F342D37D28B7B01A0040275C /* WII */ = {
+			isa = PBXGroup;
+			children = (
+				F342D37B28B7B00B0040275C /* SandboxWII.swift */,
+				F342D38628B8C3EA0040275C /* TimeStrategyWii.swift */,
+				F342D39028B8CB020040275C /* ShooterWii.swift */,
+				F342D39A28B8D12C0040275C /* MultiWii.swift */,
+				F342D3A428B8DCF30040275C /* RPGWii.swift */,
+				F342D3BE28B8EC6E0040275C /* SportWii.swift */,
+				F342D3C828B8F40C0040275C /* PuzzleWii.swift */,
+			);
+			path = WII;
+			sourceTree = "<group>";
+		};
+		F342D37E28B8BDD80040275C /* WII */ = {
+			isa = PBXGroup;
+			children = (
+				F342D37F28B8BDEA0040275C /* SandboxWiiView.swift */,
+				F342D38C28B8C9930040275C /* TimeStrategyWiiView.swift */,
+				F342D39628B8CBC40040275C /* ShooterWiiView.swift */,
+				F342D3A028B8D75B0040275C /* MultiplayerWiiView.swift */,
+				F342D3AA28B8E17C0040275C /* RPGWiiView.swift */,
+				F342D3C428B8F3260040275C /* SportWiiView.swift */,
+				F342D3CE28B8F7A30040275C /* PuzzleWiiView.swift */,
+			);
+			path = WII;
+			sourceTree = "<group>";
+		};
+		F342D38128B8BE520040275C /* WII */ = {
+			isa = PBXGroup;
+			children = (
+				F342D38228B8BE670040275C /* WiiSandboxDetailsView.swift */,
+				F342D38E28B8C9DF0040275C /* TimeStrategyWiiDetailsView.swift */,
+				F342D39828B8CC0D0040275C /* ShooterWiiDetailsView.swift */,
+				F342D3A228B8D7A20040275C /* MultiplayerWiiDetailsView.swift */,
+				F342D3AC28B8E1F80040275C /* WiiRPGDetailsView.swift */,
+				F342D3C628B8F3600040275C /* SportWiiDetailsView.swift */,
+				F342D3D028B8F7DA0040275C /* PuzzleWiiDetailsView.swift */,
+			);
+			path = WII;
+			sourceTree = "<group>";
+		};
+		F342D3D228B91CBF0040275C /* Nintendo */ = {
+			isa = PBXGroup;
+			children = (
+				F342D3D328B91CDE0040275C /* SandboxNintendo.swift */,
+				F342D3D528B91CF30040275C /* TimeStrategyNintendo.swift */,
+				F342D3D728B91D020040275C /* ShooterNintendo.swift */,
+				F342D3D928B91D120040275C /* MultiNintendo.swift */,
+				F342D3DB28B91D210040275C /* RPGNintendo.swift */,
+				F342D3DD28B91D310040275C /* SportNintendo.swift */,
+				F342D3DF28B91D3F0040275C /* PuzzleNintendo.swift */,
+			);
+			path = Nintendo;
+			sourceTree = "<group>";
+		};
+		F342D3E128B91D4D0040275C /* Nintendo */ = {
+			isa = PBXGroup;
+			children = (
+				F342D3E228B91D5C0040275C /* SandboxNintendoData.swift */,
+				F342D3EF28B92E630040275C /* TimeStrategyNintendoData.swift */,
+				F342D3F928B93C650040275C /* ShooterNintendoData.swift */,
+				F342D3FF28B944830040275C /* MultiplayerNintendoData.swift */,
+				F342D40728B94C220040275C /* RPGNintendoData.swift */,
+				F342D40F28B959BC0040275C /* SportNintendoiData.swift */,
+				F342D41728B95F520040275C /* PuzzleNintendoData.swift */,
+			);
+			path = Nintendo;
+			sourceTree = "<group>";
+		};
+		F342D3E428B92A050040275C /* Nintendo */ = {
+			isa = PBXGroup;
+			children = (
+				F342D3E528B92A300040275C /* SandboxNintendoViewModel.swift */,
+				F342D3F128B93AF10040275C /* TimeStrategyNintendoViewModel.swift */,
+				F342D3F728B93C2A0040275C /* ShooterNintendoViewModel.swift */,
+				F342D40128B94ACB0040275C /* MultiplayerNintendoViewModel.swift */,
+				F342D40928B9571E0040275C /* RPGNintendoViewModel.swift */,
+				F342D41128B95D9C0040275C /* SportNintendoViewModel.swift */,
+				F342D41928B962420040275C /* PuzzleNintendoViewModel.swift */,
+			);
+			path = Nintendo;
+			sourceTree = "<group>";
+		};
+		F342D3E728B92ABB0040275C /* Nintendo */ = {
+			isa = PBXGroup;
+			children = (
+				F342D3E828B92AC80040275C /* SandboxNintendoView.swift */,
+				F342D3F328B93B350040275C /* TimeStrategyNintendoView.swift */,
+				F342D3FB28B942F70040275C /* ShooterNintendoView.swift */,
+				F342D40328B94B2A0040275C /* MultiplayerNintendoView.swift */,
+				F342D40D28B958480040275C /* RPGNintendoView.swift */,
+				F342D41328B95E190040275C /* SportNintendoView.swift */,
+				F342D41B28B962780040275C /* PuzzleNintendoView.swift */,
+			);
+			path = Nintendo;
+			sourceTree = "<group>";
+		};
+		F342D3EA28B92AF40040275C /* Nintendo */ = {
+			isa = PBXGroup;
+			children = (
+				F342D3EB28B92B010040275C /* NintendoSandboxDetailsView.swift */,
+				F342D3F528B93B640040275C /* TimeStrategyNintendoDetailsView.swift */,
+				F342D3FD28B943990040275C /* ShooterNintendoDetailsView.swift */,
+				F342D40528B94B650040275C /* MultiplayerNintendoDetailsView.swift */,
+				F342D40B28B958270040275C /* NintendoRPGDetailsView.swift */,
+				F342D41528B95E570040275C /* SportNintendoDetailsView.swift */,
+				F342D41D28B962B10040275C /* PuzzleNintendoDetailsView.swift */,
+			);
+			path = Nintendo;
+			sourceTree = "<group>";
+		};
 		F37BA9FC28996F5C004FD80C = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +704,8 @@
 		F3A5DE9328AA334A0069D044 /* GameData */ = {
 			isa = PBXGroup;
 			children = (
+				F342D3E128B91D4D0040275C /* Nintendo */,
+				F342D37328B7AF3C0040275C /* WII */,
 				F31179A428AE350E00B1932F /* Playstation */,
 				F3A5DE9528AA33FA0069D044 /* Xbox */,
 			);
@@ -415,6 +716,8 @@
 			isa = PBXGroup;
 			children = (
 				F3A5DEA928AA67F30069D044 /* XboxGamesListView.swift */,
+				F342D3ED28B92B480040275C /* NintendoGamesListView.swift */,
+				F342D38428B8C0720040275C /* WiiGamesListView.swift */,
 				F31179C228AE3A8D00B1932F /* PlaystationGamesListView.swift */,
 			);
 			path = GameLists;
@@ -445,6 +748,8 @@
 		F3A5DE9928AA46230069D044 /* GameModels */ = {
 			isa = PBXGroup;
 			children = (
+				F342D3D228B91CBF0040275C /* Nintendo */,
+				F342D37D28B7B01A0040275C /* WII */,
 				F311799528AE348500B1932F /* Playstation */,
 				F3A5DE9A28AA462B0069D044 /* Xbox */,
 			);
@@ -454,11 +759,11 @@
 		F3A5DE9A28AA462B0069D044 /* Xbox */ = {
 			isa = PBXGroup;
 			children = (
+				F3DF143228AA91280085965F /* RPGXbox.swift */,
 				F3A5DE9B28AA46440069D044 /* SandboXbox.swift */,
 				F3A5DEAB28AA75F30069D044 /* TimeStrategyXbox.swift */,
 				F3A5DEB928AA82DA0069D044 /* ShooterXbox.swift */,
 				F3DF142A28AA8DC50085965F /* MultiplayerXbox.swift */,
-				F3DF143228AA91280085965F /* RPGXbox.swift */,
 				F311797628AE1E3B00B1932F /* RolePlayingXbox.swift */,
 				F311798028AE2A6900B1932F /* SportXbox.swift */,
 			);
@@ -468,6 +773,8 @@
 		F3A5DE9D28AA496E0069D044 /* GameViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F342D3E428B92A050040275C /* Nintendo */,
+				F342D37628B7AF650040275C /* WII */,
 				F311798628AE339700B1932F /* Playstation */,
 				F3A5DE9E28AA49790069D044 /* Xbox */,
 			);
@@ -491,6 +798,8 @@
 		F3A5DEA128AA4C400069D044 /* GameView */ = {
 			isa = PBXGroup;
 			children = (
+				F342D3E728B92ABB0040275C /* Nintendo */,
+				F342D37E28B8BDD80040275C /* WII */,
 				F31179B328AE384500B1932F /* Playstation */,
 				F3A5DEA228AA4C480069D044 /* Xbox */,
 			);
@@ -505,7 +814,7 @@
 				F3A5DEBB28AA83630069D044 /* ShooterXboxView.swift */,
 				F3DF142C28AA8E540085965F /* MultiplayerXboxView.swift */,
 				F3DF143028AA90FF0085965F /* RPGXboxView.swift */,
-				F311797428AE1E1E00B1932F /* RolePlayingXboxView.swift */,
+				F311797428AE1E1E00B1932F /* PuzzleXboxView.swift */,
 				F311797E28AE2A5700B1932F /* SportXboxView.swift */,
 			);
 			path = Xbox;
@@ -514,6 +823,8 @@
 		F3A5DEA528AA4E190069D044 /* GameDetails */ = {
 			isa = PBXGroup;
 			children = (
+				F342D3EA28B92AF40040275C /* Nintendo */,
+				F342D38128B8BE520040275C /* WII */,
 				F31179CA28AE3C2A00B1932F /* Playstation */,
 				F3A5DEA628AA4E210069D044 /* Xbox */,
 			);
@@ -526,9 +837,9 @@
 				F3A5DEA728AA4E430069D044 /* XboxSandboxDetailsView.swift */,
 				F3A5DEB328AA7D010069D044 /* TimeStrategyXboxDetailsView.swift */,
 				F3A5DEBD28AA84120069D044 /* ShooterXboxDetailsView.swift */,
+				F311797228AE1DF800B1932F /* RolePlayingXboxDetailsView.swift */,
 				F3DF142E28AA8F7A0085965F /* MultiplayerXboxDetailsView.swift */,
 				F3DF143828AA92FC0085965F /* XboxRPGDetailsView.swift */,
-				F311797228AE1DF800B1932F /* RolePlayingXboxDetailsView.swift */,
 				F311797C28AE2A4100B1932F /* SportXboxDetailsView.swift */,
 			);
 			path = Xbox;
@@ -683,107 +994,184 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A306F028A3BCE10076107F /* MapScreen.swift in Sources */,
+				F342D3F228B93AF10040275C /* TimeStrategyNintendoViewModel.swift in Sources */,
 				F30D8EBD28999F5900A391F1 /* XboxListView.swift in Sources */,
+				F342D3EC28B92B010040275C /* NintendoSandboxDetailsView.swift in Sources */,
+				F342D36E28B7AA090040275C /* PlaystationSandboxDetailsView.swift in Sources */,
 				F3A5DE8428A7BECF0069D044 /* NintindoDate.swift in Sources */,
+				F342D3A328B8D7A20040275C /* MultiplayerWiiDetailsView.swift in Sources */,
 				F31B1AE3289A99D6002D850B /* PlaystationViewModel.swift in Sources */,
+				F342D39928B8CC0D0040275C /* ShooterWiiDetailsView.swift in Sources */,
 				F3714FEE28B3C54600732ED9 /* SideMenuView.swift in Sources */,
+				F342D3E928B92AC80040275C /* SandboxNintendoView.swift in Sources */,
 				F3A5DEAC28AA75F30069D044 /* TimeStrategyXbox.swift in Sources */,
+				F342D37C28B7B00B0040275C /* SandboxWII.swift in Sources */,
 				F31B1AF3289ADC26002D850B /* WiiView.swift in Sources */,
+				F342D3D828B91D020040275C /* ShooterNintendo.swift in Sources */,
 				F3C86BCA28998D2600FD7962 /* Xbox.swift in Sources */,
+				F342D41428B95E190040275C /* SportNintendoView.swift in Sources */,
+				F342D3C528B8F3260040275C /* SportWiiView.swift in Sources */,
 				F3DF142928AA8D3E0085965F /* MultiXboxViewModel.swift in Sources */,
 				F31179E428AE42ED00B1932F /* MultiplayerPlaystationView.swift in Sources */,
+				F342D37A28B7AFD10040275C /* SandboxWIIData.swift in Sources */,
+				F342D3DE28B91D310040275C /* SportNintendo.swift in Sources */,
 				F3A5DE9C28AA46450069D044 /* SandboXbox.swift in Sources */,
 				F3F1B0F628AE530F00B29E6F /* OnboardingCardView.swift in Sources */,
 				F31B1ADF289A995A002D850B /* Playstation.swift in Sources */,
+				F342D3D128B8F7DA0040275C /* PuzzleWiiDetailsView.swift in Sources */,
+				F342D38B28B8C4470040275C /* TimeStrategyWiiViewModel.swift in Sources */,
+				F342D40C28B958270040275C /* NintendoRPGDetailsView.swift in Sources */,
 				F311797F28AE2A5700B1932F /* SportXboxView.swift in Sources */,
 				F31B1AE9289AD694002D850B /* WII.swift in Sources */,
+				F342D41028B959BC0040275C /* SportNintendoiData.swift in Sources */,
+				F342D3EE28B92B480040275C /* NintendoGamesListView.swift in Sources */,
 				F31B1AFA289AE949002D850B /* Coordinator.swift in Sources */,
 				F3DF142F28AA8F7A0085965F /* MultiplayerXboxDetailsView.swift in Sources */,
+				F342D40828B94C220040275C /* RPGNintendoData.swift in Sources */,
 				F3A5DE8E28A7C6640069D044 /* XboxGamesView.swift in Sources */,
+				F342D3E328B91D5C0040275C /* SandboxNintendoData.swift in Sources */,
 				F3A5DE8828A7C3720069D044 /* NintindoView.swift in Sources */,
+				F342D41828B95F520040275C /* PuzzleNintendoData.swift in Sources */,
+				F342D3DA28B91D120040275C /* MultiNintendo.swift in Sources */,
 				F3A5DEBE28AA84120069D044 /* ShooterXboxDetailsView.swift in Sources */,
 				F31179E228AE421D00B1932F /* MultiplayerPlaystationData.swift in Sources */,
 				F31B1B00289AEAA6002D850B /* LocationManager.swift in Sources */,
 				F311797D28AE2A4100B1932F /* SportXboxDetailsView.swift in Sources */,
+				F342D3E628B92A300040275C /* SandboxNintendoViewModel.swift in Sources */,
+				F342D41228B95D9C0040275C /* SportNintendoViewModel.swift in Sources */,
 				F31179C728AE3AEF00B1932F /* SandboxPlaystationData.swift in Sources */,
 				F31179C128AE38A200B1932F /* SportPlaystationView.swift in Sources */,
 				F31179D828AE40FA00B1932F /* ShooterPlaystationData.swift in Sources */,
+				F342D3A728B8DD060040275C /* RPGPWiiData.swift in Sources */,
+				F342D40E28B958480040275C /* RPGNintendoView.swift in Sources */,
 				F3A5DEAE28AA76230069D044 /* TimeStrategyXboxData.swift in Sources */,
 				F31179E628AE434800B1932F /* MultiplayerPlaystationDetailsView.swift in Sources */,
 				F3A5DEB228AA7C450069D044 /* TimeStrategyXboxView.swift in Sources */,
+				F342D39728B8CBC40040275C /* ShooterWiiView.swift in Sources */,
+				F342D40628B94B650040275C /* MultiplayerNintendoDetailsView.swift in Sources */,
+				F342D41E28B962B10040275C /* PuzzleNintendoDetailsView.swift in Sources */,
+				F342D37228B7AADE0040275C /* SportPlaystationDetailsView.swift in Sources */,
 				F3F1B0F828AE536400B29E6F /* OnboardingView.swift in Sources */,
+				F342D3D628B91CF30040275C /* TimeStrategyNintendo.swift in Sources */,
 				F31B1AEF289ADB92002D850B /* WiiViewModel.swift in Sources */,
 				F3A5DE9228AA33200069D044 /* SandboXboxViewModel.swift in Sources */,
+				F342D3FA28B93C650040275C /* ShooterNintendoData.swift in Sources */,
+				F342D3CD28B8F4440040275C /* PuzzleWiiViewModel.swift in Sources */,
 				F3DF143128AA90FF0085965F /* RPGXboxView.swift in Sources */,
 				F31179E028AE41E000B1932F /* MultiPlaystationViewModel.swift in Sources */,
 				F311799928AE34AB00B1932F /* TimeStrategyPlaystation.swift in Sources */,
 				F3DF143928AA92FC0085965F /* XboxRPGDetailsView.swift in Sources */,
 				F31B1AF7289AE83C002D850B /* MapView.swift in Sources */,
 				F31B1AE1289A9986002D850B /* PlaystationView.swift in Sources */,
+				F342D38928B8C4180040275C /* TimeStrategyWiiData.swift in Sources */,
 				F311798328AE2A8900B1932F /* SportXboxData.swift in Sources */,
 				F311799028AE340100B1932F /* RPGPlaystationViewModel.swift in Sources */,
+				F342D39B28B8D12C0040275C /* MultiWii.swift in Sources */,
 				F3F1B0EA28AE4DB700B29E6F /* SettingsScreenFinal.swift in Sources */,
+				F342D39128B8CB020040275C /* ShooterWii.swift in Sources */,
+				F342D3E028B91D3F0040275C /* PuzzleNintendo.swift in Sources */,
+				F342D3FE28B943990040275C /* ShooterNintendoDetailsView.swift in Sources */,
+				F342D39328B8CB230040275C /* ShooterWiData.swift in Sources */,
 				F3A5DEBC28AA83630069D044 /* ShooterXboxView.swift in Sources */,
+				F342D3C328B8F1DD0040275C /* SportWiiViewModel.swift in Sources */,
 				F31179A328AE34DC00B1932F /* SportPlaystation.swift in Sources */,
+				F342D3BF28B8EC6E0040275C /* SportWii.swift in Sources */,
+				F342D3CB28B8F41D0040275C /* PuzzleWiiData.swift in Sources */,
 				F311797328AE1DF800B1932F /* RolePlayingXboxDetailsView.swift in Sources */,
+				F342D40A28B9571E0040275C /* RPGNintendoViewModel.swift in Sources */,
+				F342D40428B94B2A0040275C /* MultiplayerNintendoView.swift in Sources */,
 				F3A5DE8228A7BAB50069D044 /* NintindoViewModel.swift in Sources */,
 				F31B1AD9289A88D3002D850B /* XboxDetailsView.swift in Sources */,
+				F342D36A28B7A5490040275C /* RPGPlaystationView.swift in Sources */,
 				F31B1ADD289A9084002D850B /* PlaystationData.swift in Sources */,
+				F342D38528B8C0720040275C /* WiiGamesListView.swift in Sources */,
 				F31179D628AE40A400B1932F /* ShooterPlaystationViewModel.swift in Sources */,
 				F311797B28AE1EA300B1932F /* RolePlayingXboxViewModel.swift in Sources */,
 				F3C86BCC28998FB400FD7962 /* XboxView.swift in Sources */,
 				F31B1AF1289ADC16002D850B /* WiiListView.swift in Sources */,
 				F31179D028AE3DE200B1932F /* TimeStrategyPlaystationData.swift in Sources */,
+				F342D3A128B8D75B0040275C /* MultiplayerWiiView.swift in Sources */,
+				F342D3F428B93B350040275C /* TimeStrategyNintendoView.swift in Sources */,
+				F342D35D28B7A34A0040275C /* PuzzlePlaystationView.swift in Sources */,
 				F3490FD128A3E9BF00025D95 /* Wishlist.swift in Sources */,
 				F3A5DE9728AA34240069D044 /* ConsoleView.swift in Sources */,
 				F3A5DEB828AA82570069D044 /* ShooterXboxViewModel.swift in Sources */,
 				F3DF142B28AA8DC50085965F /* MultiplayerXbox.swift in Sources */,
 				F31B1AE7289A9A98002D850B /* PlaystationDetailsView.swift in Sources */,
+				F342D37028B7AA8C0040275C /* PlaystationRPGDetailsView.swift in Sources */,
 				F311799228AE340C00B1932F /* RolePlayingPlaystationViewModel.swift in Sources */,
+				F342D39F28B8D70A0040275C /* MultiplayerWiiViewModel.swift in Sources */,
 				F3DF143728AA91B10085965F /* RPGXboxViewModel.swift in Sources */,
 				F311799D28AE34C000B1932F /* MultiplayerPlaystation.swift in Sources */,
-				F31179C928AE3B6600B1932F /* PlaystationSandboxView.swift in Sources */,
+				F342D3CF28B8F7A30040275C /* PuzzleWiiView.swift in Sources */,
+				F342D3D428B91CDE0040275C /* SandboxNintendo.swift in Sources */,
+				F342D41A28B962420040275C /* PuzzleNintendoViewModel.swift in Sources */,
 				F3DF143528AA91560085965F /* RPGXboxData.swift in Sources */,
+				F342D3F628B93B640040275C /* TimeStrategyNintendoDetailsView.swift in Sources */,
 				F31B1AF5289ADD3F002D850B /* WiiDetailsView.swift in Sources */,
+				F342D35928B79F8E0040275C /* SandboxPlaystationView.swift in Sources */,
 				F3A5DEAA28AA67F30069D044 /* XboxGamesListView.swift in Sources */,
+				F342D38F28B8C9DF0040275C /* TimeStrategyWiiDetailsView.swift in Sources */,
 				F3F1B0FA28AE546000B29E6F /* StartButtonView.swift in Sources */,
 				F3A5DE9028AA330F0069D044 /* SandboxXboxData.swift in Sources */,
 				F311799728AE34A100B1932F /* SandboXPlaystation.swift in Sources */,
 				F31B1AE5289A9A47002D850B /* PlaystationListView.swift in Sources */,
 				F3A5DEBA28AA82DA0069D044 /* ShooterXbox.swift in Sources */,
+				F342D3A528B8DCF30040275C /* RPGWii.swift in Sources */,
 				F31179AE28AE354000B1932F /* RPGPlaystationData.swift in Sources */,
+				F342D40228B94ACB0040275C /* MultiplayerNintendoViewModel.swift in Sources */,
 				F31179C528AE3AC800B1932F /* SandboxPlaystationViewModel.swift in Sources */,
 				F31B1AED289AD6F7002D850B /* WiiData.swift in Sources */,
-				F31179CC28AE3C3E00B1932F /* PlaystationSandboxDetailsView.swift in Sources */,
 				F3A5DE8C28A7C51B0069D044 /* NintindoDetailsView.swift in Sources */,
+				F342D3C928B8F40C0040275C /* PuzzleWii.swift in Sources */,
 				F3490FCE28A3DC0200025D95 /* SplashScreen.swift in Sources */,
 				F31179C328AE3A8D00B1932F /* PlaystationGamesListView.swift in Sources */,
+				F342D3DC28B91D210040275C /* RPGNintendo.swift in Sources */,
 				F3DF142728AA8A690085965F /* MultiplayerXboxData.swift in Sources */,
-				F311797528AE1E1E00B1932F /* RolePlayingXboxView.swift in Sources */,
+				F342D38328B8BE670040275C /* WiiSandboxDetailsView.swift in Sources */,
+				F311797528AE1E1E00B1932F /* PuzzleXboxView.swift in Sources */,
+				F342D3C728B8F3600040275C /* SportWiiDetailsView.swift in Sources */,
+				F342D38D28B8C9930040275C /* TimeStrategyWiiView.swift in Sources */,
 				F311798128AE2A6900B1932F /* SportXbox.swift in Sources */,
+				F342D38728B8C3EA0040275C /* TimeStrategyWii.swift in Sources */,
 				F31179A128AE34D400B1932F /* RolePlayingPlaystation.swift in Sources */,
 				F3A5DEA828AA4E430069D044 /* XboxSandboxDetailsView.swift in Sources */,
+				F342D3AB28B8E17C0040275C /* RPGWiiView.swift in Sources */,
 				F31179D228AE3E2400B1932F /* TimeStrategyPlaystationDetailsView.swift in Sources */,
 				F31179B028AE354A00B1932F /* RolePlayingPlaystationData.swift in Sources */,
 				F31179DE28AE416F00B1932F /* ShooterPlaystationDetailsView.swift in Sources */,
 				F3C86BC528998A0500FD7962 /* XboxData.swift in Sources */,
 				F3A5DEA028AA4B270069D044 /* XboxSandboxView.swift in Sources */,
+				F342D41628B95E570040275C /* SportNintendoDetailsView.swift in Sources */,
+				F342D39D28B8D1540040275C /* MultiplayerWiiData.swift in Sources */,
 				F3C86BC22899899800FD7962 /* SereneGamingApp.swift in Sources */,
 				F31179D428AE402C00B1932F /* TimeStrategyPlaystationView.swift in Sources */,
+				F342D3A928B8E1300040275C /* RPGWiiViewModel.swift in Sources */,
+				F342D3AD28B8E1F80040275C /* WiiRPGDetailsView.swift in Sources */,
+				F342D3FC28B942F70040275C /* ShooterNintendoView.swift in Sources */,
+				F342D38028B8BDEA0040275C /* SandboxWiiView.swift in Sources */,
+				F342D35B28B7A2650040275C /* RolePlayingPlaystationDetailsView.swift in Sources */,
+				F342D41C28B962780040275C /* PuzzleNintendoView.swift in Sources */,
 				F31179DC28AE413400B1932F /* ShooterPlaystationView.swift in Sources */,
 				F311797928AE1E4D00B1932F /* RolePlayingXboxData.swift in Sources */,
 				F3DF142D28AA8E540085965F /* MultiplayerXboxView.swift in Sources */,
+				F342D3F828B93C2A0040275C /* ShooterNintendoViewModel.swift in Sources */,
 				F311799428AE341600B1932F /* SportPlaystationViewModel.swift in Sources */,
 				F37BAA0B28996F5C004FD80C /* ContentView.swift in Sources */,
+				F342D39528B8CB520040275C /* ShooterWiiViewModel.swift in Sources */,
 				F3C86BC728998A6D00FD7962 /* XboxViewModel.swift in Sources */,
 				F3A5DE8628A7BF250069D044 /* Nintindo.swift in Sources */,
 				F3A5DE8A28A7C4230069D044 /* NintindoListView.swift in Sources */,
 				F3DF143328AA91280085965F /* RPGXbox.swift in Sources */,
+				F342D3F028B92E630040275C /* TimeStrategyNintendoData.swift in Sources */,
 				F311797728AE1E3B00B1932F /* RolePlayingXbox.swift in Sources */,
 				F31179B228AE355600B1932F /* SportPlaystationData.swift in Sources */,
 				F311799F28AE34CA00B1932F /* RPGPlaystation.swift in Sources */,
+				F342D37828B7AF750040275C /* SandboWIIViewModel.swift in Sources */,
 				F311798528AE2AA100B1932F /* SportXboxViewModel.swift in Sources */,
+				F342D40028B944830040275C /* MultiplayerNintendoData.swift in Sources */,
 				F31179CE28AE3DA200B1932F /* TimeStrategyPlaystationViewModel.swift in Sources */,
+				F342D3C128B8EC840040275C /* SportWiiData.swift in Sources */,
 				F3A5DEB628AA80DC0069D044 /* ShooterXboxData.swift in Sources */,
 				F3A5DEB028AA79060069D044 /* TimeStrategyXboxViewModel.swift in Sources */,
 				F3A5DEB428AA7D010069D044 /* TimeStrategyXboxDetailsView.swift in Sources */,
